@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45E01F24F9C000519200 /* AppDelegate.swift */; };
+		40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DA45E71F24F9C100519200 /* Assets.xcassets */; };
+		40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */; };
+		40DA46011F24F9C100519200 /* Whispr_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46001F24F9C100519200 /* Whispr_iOSUITests.swift */; };
+		40DA46181F24FAA400519200 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46131F24FAA400519200 /* LoginViewController.swift */; };
+		40DA46191F24FAA400519200 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46151F24FAA400519200 /* PlayerViewController.swift */; };
+		40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46171F24FAA400519200 /* RecordViewController.swift */; };
+		40DA461F1F24FAB200519200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */; };
+		40DA46201F24FAB200519200 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461D1F24FAB200519200 /* Login.storyboard */; };
+		40DA46211F24FAB200519200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461E1F24FAB200519200 /* Main.storyboard */; };
+		40DA46231F24FB2700519200 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA46221F24FB2700519200 /* AudioKit.framework */; };
+		40DA46241F24FB2700519200 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA46221F24FB2700519200 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40DA462B1F24FCF600519200 /* AVFoundationRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46291F24FCF600519200 /* AVFoundationRecorder.swift */; };
+		40DA462C1F24FCF600519200 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA462A1F24FCF600519200 /* Recorder.swift */; };
+		40DA462E1F24FD7300519200 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA462D1F24FD7300519200 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DA45F21F24F9C100519200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DA45D51F24F9C000519200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DA45DC1F24F9C000519200;
+			remoteInfo = "Whispr-iOS";
+		};
+		40DA45FD1F24F9C100519200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DA45D51F24F9C000519200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DA45DC1F24F9C000519200;
+			remoteInfo = "Whispr-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40DA46251F24FB2700519200 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40DA46241F24FB2700519200 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40DA45DD1F24F9C000519200 /* Whispr-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whispr-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DA45E01F24F9C000519200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40DA45E71F24F9C100519200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40DA45EC1F24F9C100519200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DA45F11F24F9C100519200 /* Whispr-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whispr-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whispr_iOSTests.swift; sourceTree = "<group>"; };
+		40DA45F71F24F9C100519200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DA45FC1F24F9C100519200 /* Whispr-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whispr-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DA46001F24F9C100519200 /* Whispr_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whispr_iOSUITests.swift; sourceTree = "<group>"; };
+		40DA46021F24F9C100519200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DA46131F24FAA400519200 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		40DA46151F24FAA400519200 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		40DA46171F24FAA400519200 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40DA461D1F24FAB200519200 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		40DA461E1F24FAB200519200 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		40DA46221F24FB2700519200 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/iOS/AudioKit.framework; sourceTree = "<group>"; };
+		40DA46291F24FCF600519200 /* AVFoundationRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVFoundationRecorder.swift; sourceTree = "<group>"; };
+		40DA462A1F24FCF600519200 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		40DA462D1F24FD7300519200 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DA45DA1F24F9C000519200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DA462E1F24FD7300519200 /* AVFoundation.framework in Frameworks */,
+				40DA46231F24FB2700519200 /* AudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45EE1F24F9C100519200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45F91F24F9C100519200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DA45D41F24F9C000519200 = {
+			isa = PBXGroup;
+			children = (
+				40DA46261F24FB2E00519200 /* Frameworks */,
+				40DA45DF1F24F9C000519200 /* Whispr-iOS */,
+				40DA45F41F24F9C100519200 /* Whispr-iOSTests */,
+				40DA45FF1F24F9C100519200 /* Whispr-iOSUITests */,
+				40DA45DE1F24F9C000519200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40DA45DE1F24F9C000519200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DA45DD1F24F9C000519200 /* Whispr-iOS.app */,
+				40DA45F11F24F9C100519200 /* Whispr-iOSTests.xctest */,
+				40DA45FC1F24F9C100519200 /* Whispr-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DA45DF1F24F9C000519200 /* Whispr-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46271F24FCF600519200 /* Backend */,
+				40DA461B1F24FAB200519200 /* Interface */,
+				40DA46101F24FAA400519200 /* ViewControllers */,
+				40DA45E01F24F9C000519200 /* AppDelegate.swift */,
+				40DA45E71F24F9C100519200 /* Assets.xcassets */,
+				40DA45EC1F24F9C100519200 /* Info.plist */,
+			);
+			path = "Whispr-iOS";
+			sourceTree = "<group>";
+		};
+		40DA45F41F24F9C100519200 /* Whispr-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */,
+				40DA45F71F24F9C100519200 /* Info.plist */,
+			);
+			path = "Whispr-iOSTests";
+			sourceTree = "<group>";
+		};
+		40DA45FF1F24F9C100519200 /* Whispr-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46001F24F9C100519200 /* Whispr_iOSUITests.swift */,
+				40DA46021F24F9C100519200 /* Info.plist */,
+			);
+			path = "Whispr-iOSUITests";
+			sourceTree = "<group>";
+		};
+		40DA46101F24FAA400519200 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46111F24FAA400519200 /* Editor */,
+				40DA46121F24FAA400519200 /* Login */,
+				40DA46141F24FAA400519200 /* Player */,
+				40DA46161F24FAA400519200 /* Record */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		40DA46111F24FAA400519200 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		40DA46121F24FAA400519200 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46131F24FAA400519200 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		40DA46141F24FAA400519200 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46151F24FAA400519200 /* PlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		40DA46161F24FAA400519200 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46171F24FAA400519200 /* RecordViewController.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		40DA461B1F24FAB200519200 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */,
+				40DA461D1F24FAB200519200 /* Login.storyboard */,
+				40DA461E1F24FAB200519200 /* Main.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		40DA46261F24FB2E00519200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40DA462D1F24FD7300519200 /* AVFoundation.framework */,
+				40DA46221F24FB2700519200 /* AudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40DA46271F24FCF600519200 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46281F24FCF600519200 /* Recording */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		40DA46281F24FCF600519200 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46291F24FCF600519200 /* AVFoundationRecorder.swift */,
+				40DA462A1F24FCF600519200 /* Recorder.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40DA45DC1F24F9C000519200 /* Whispr-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DA46051F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOS" */;
+			buildPhases = (
+				40DA45D91F24F9C000519200 /* Sources */,
+				40DA45DA1F24F9C000519200 /* Frameworks */,
+				40DA45DB1F24F9C000519200 /* Resources */,
+				40DA46251F24FB2700519200 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whispr-iOS";
+			productName = "Whispr-iOS";
+			productReference = 40DA45DD1F24F9C000519200 /* Whispr-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40DA45F01F24F9C100519200 /* Whispr-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DA46081F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOSTests" */;
+			buildPhases = (
+				40DA45ED1F24F9C100519200 /* Sources */,
+				40DA45EE1F24F9C100519200 /* Frameworks */,
+				40DA45EF1F24F9C100519200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DA45F31F24F9C100519200 /* PBXTargetDependency */,
+			);
+			name = "Whispr-iOSTests";
+			productName = "Whispr-iOSTests";
+			productReference = 40DA45F11F24F9C100519200 /* Whispr-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40DA45FB1F24F9C100519200 /* Whispr-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DA460B1F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOSUITests" */;
+			buildPhases = (
+				40DA45F81F24F9C100519200 /* Sources */,
+				40DA45F91F24F9C100519200 /* Frameworks */,
+				40DA45FA1F24F9C100519200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DA45FE1F24F9C100519200 /* PBXTargetDependency */,
+			);
+			name = "Whispr-iOSUITests";
+			productName = "Whispr-iOSUITests";
+			productReference = 40DA45FC1F24F9C100519200 /* Whispr-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DA45D51F24F9C000519200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mikael Sundström";
+				TargetAttributes = {
+					40DA45DC1F24F9C000519200 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UR3JNX8K6N;
+						ProvisioningStyle = Automatic;
+					};
+					40DA45F01F24F9C100519200 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UR3JNX8K6N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40DA45DC1F24F9C000519200;
+					};
+					40DA45FB1F24F9C100519200 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UR3JNX8K6N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40DA45DC1F24F9C000519200;
+					};
+				};
+			};
+			buildConfigurationList = 40DA45D81F24F9C000519200 /* Build configuration list for PBXProject "Whispr-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40DA45D41F24F9C000519200;
+			productRefGroup = 40DA45DE1F24F9C000519200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40DA45DC1F24F9C000519200 /* Whispr-iOS */,
+				40DA45F01F24F9C100519200 /* Whispr-iOSTests */,
+				40DA45FB1F24F9C100519200 /* Whispr-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40DA45DB1F24F9C000519200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DA461F1F24FAB200519200 /* LaunchScreen.storyboard in Resources */,
+				40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */,
+				40DA46211F24FAB200519200 /* Main.storyboard in Resources */,
+				40DA46201F24FAB200519200 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45EF1F24F9C100519200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45FA1F24F9C100519200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DA45D91F24F9C000519200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DA46181F24FAA400519200 /* LoginViewController.swift in Sources */,
+				40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */,
+				40DA462B1F24FCF600519200 /* AVFoundationRecorder.swift in Sources */,
+				40DA462C1F24FCF600519200 /* Recorder.swift in Sources */,
+				40DA46191F24FAA400519200 /* PlayerViewController.swift in Sources */,
+				40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45ED1F24F9C100519200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DA45F81F24F9C100519200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DA46011F24F9C100519200 /* Whispr_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40DA45F31F24F9C100519200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DA45DC1F24F9C000519200 /* Whispr-iOS */;
+			targetProxy = 40DA45F21F24F9C100519200 /* PBXContainerItemProxy */;
+		};
+		40DA45FE1F24F9C100519200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DA45DC1F24F9C000519200 /* Whispr-iOS */;
+			targetProxy = 40DA45FD1F24F9C100519200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40DA46031F24F9C100519200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40DA46041F24F9C100519200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40DA46061F24F9C100519200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Whispr-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		40DA46071F24F9C100519200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Whispr-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		40DA46091F24F9C100519200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				INFOPLIST_FILE = "Whispr-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whispr-iOS.app/Whispr-iOS";
+			};
+			name = Debug;
+		};
+		40DA460A1F24F9C100519200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				INFOPLIST_FILE = "Whispr-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whispr-iOS.app/Whispr-iOS";
+			};
+			name = Release;
+		};
+		40DA460C1F24F9C100519200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				INFOPLIST_FILE = "Whispr-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Whispr-iOS";
+			};
+			name = Debug;
+		};
+		40DA460D1F24F9C100519200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UR3JNX8K6N;
+				INFOPLIST_FILE = "Whispr-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Whispr-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DA45D81F24F9C000519200 /* Build configuration list for PBXProject "Whispr-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DA46031F24F9C100519200 /* Debug */,
+				40DA46041F24F9C100519200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DA46051F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DA46061F24F9C100519200 /* Debug */,
+				40DA46071F24F9C100519200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DA46081F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DA46091F24F9C100519200 /* Debug */,
+				40DA460A1F24F9C100519200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DA460B1F24F9C100519200 /* Build configuration list for PBXNativeTarget "Whispr-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DA460C1F24F9C100519200 /* Debug */,
+				40DA460D1F24F9C100519200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DA45D51F24F9C000519200 /* Project object */;
+}
