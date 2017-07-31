@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zKp-BI-zqS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="flG-EC-yPv">
+            <objects>
+                <viewController id="aCX-TK-1MU" customClass="PlayerViewController" customModule="Whispr_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ewa-L4-Lgq"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOI-eP-9u2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P2J-DP-bzq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcB-h3-bLf">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="aCX-TK-1MU" eventType="touchUpInside" id="VtB-wt-eDF"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EGD-C5-e6m">
+                                <rect key="frame" x="34" y="412" width="307" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JqG-Cl-yd9"/>
+                                </constraints>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vcB-h3-bLf" firstAttribute="centerX" secondItem="P2J-DP-bzq" secondAttribute="centerX" id="Ag0-V6-VO1"/>
+                            <constraint firstItem="vcB-h3-bLf" firstAttribute="centerY" secondItem="P2J-DP-bzq" secondAttribute="centerY" id="K2C-01-VJH"/>
+                            <constraint firstItem="EGD-C5-e6m" firstAttribute="top" secondItem="vcB-h3-bLf" secondAttribute="bottom" constant="64" id="OfP-Xs-lYx"/>
+                            <constraint firstItem="EGD-C5-e6m" firstAttribute="centerX" secondItem="P2J-DP-bzq" secondAttribute="centerX" id="Sbi-V2-ZxM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EGD-C5-e6m" secondAttribute="trailing" constant="20" id="bv6-40-OTY"/>
+                            <constraint firstItem="EGD-C5-e6m" firstAttribute="leading" secondItem="P2J-DP-bzq" secondAttribute="leadingMargin" constant="20" id="j4A-gt-Bgt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1o2-lE-LI4"/>
+                    <connections>
+                        <outlet property="progressBar" destination="EGD-C5-e6m" id="02F-y7-wpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVY-rL-Q8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4113" y="535"/>
+        </scene>
+        <!--Listen-->
+        <scene sceneID="azO-yy-Js2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zKp-BI-zqS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Listen" id="Wnr-9i-w0T"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iDV-4J-PcB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="55L-4W-9aJ" kind="relationship" relationship="rootViewController" id="Hjg-2x-FiW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYv-Db-HQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="534.78260869565224"/>
+        </scene>
+        <!--Saved Audio View Controller-->
+        <scene sceneID="MJN-qa-531">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dt5-QC-GLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="55L-4W-9aJ" customClass="SavedAudioViewController" customModule="Whispr_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hve-jL-ELZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yDM-kZ-Fhy"/>
+                    <connections>
+                        <outlet property="tableView" destination="hve-jL-ELZ" id="1hh-nC-te8"/>
+                        <segue destination="aCX-TK-1MU" kind="show" identifier="AudioSegue" id="gpJ-kw-c6U"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3145" y="535"/>
+        </scene>
+    </scenes>
+</document>

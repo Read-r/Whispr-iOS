@@ -13,25 +13,23 @@ class RecordViewController: UIViewController {
     
     var recorder : Recorder = AVFoundationRecorder()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let audioSession = AVAudioSession.sharedInstance()
-        
-        do {
-            try audioSession.setCategory(AVAudioSessionCategoryRecord, with:.defaultToSpeaker)
-            try audioSession.setActive(true)
-        } catch let error as NSError {
-            print("audioSession error: \(error.localizedDescription)")
-        }
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
     
     @IBAction func buttonAction(_ sender: Any) {
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with:.defaultToSpeaker)
+            try audioSession.setActive(true)
+        } catch let error as NSError {
+            print("audioSession error: \(error.localizedDescription)")
+            return
+        }
+        
         if self.recorder.isRecording() {
             self.recorder.stopRecording()
         }
