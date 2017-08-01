@@ -9,7 +9,7 @@
 import UIKit
 
 class Recorder: NSObject {
-    func setup() {
+    func setup() -> Bool {
         fatalError("Must override function \"setup()\"!")
     }
     

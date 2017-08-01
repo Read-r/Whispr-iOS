@@ -11,12 +11,28 @@ import AVFoundation
 
 class AVFoundationRecorder: Recorder, AVAudioRecorderDelegate {
     
-    lazy var audioRecorder : AVAudioRecorder = {
+    var audioRecorder : AVAudioRecorder? = nil
+    private var fileURL : URL? = nil
+    var fileName : String {
+        set {
+            let dirPaths = FileManager.default.urls(for: .documentDirectory,
+                                                    in: .userDomainMask)
+            
+            fileURL = dirPaths[0].appendingPathComponent(newValue)
+        }
+        get {
+            if let url = fileURL {
+                return url.lastPathComponent
+            }
+            return ""
+        }
+    }
+    
+    override func setup() -> Bool {
         
-        let dirPaths = FileManager.default.urls(for: .documentDirectory,
-                                                in: .userDomainMask)
-        
-        let soundFileURL = dirPaths[0].appendingPathComponent("sound.m4a")
+        guard let url = fileURL else {
+            return false
+        }
         
         let settings =
             [AVFormatIDKey : kAudioFormatMPEG4AAC,
@@ -26,7 +42,7 @@ class AVFoundationRecorder: Recorder, AVAudioRecorderDelegate {
         var recorder: AVAudioRecorder? = nil
         
         do {
-            recorder = try AVAudioRecorder(url: soundFileURL, settings:settings)
+            recorder = try AVAudioRecorder(url: url, settings:settings)
         }
         catch {
             print("error")
@@ -34,24 +50,22 @@ class AVFoundationRecorder: Recorder, AVAudioRecorderDelegate {
         
         if let rec = recorder {
             rec.delegate = self
+            audioRecorder = recorder
         }
-        
-        return recorder!
-    }()
-    
-    override func setup() {
-        
     }
     
     override func record() -> Bool {
-        if self.audioRecorder.prepareToRecord() {
-            
-            if self.audioRecorder.record() {
-                #if DEBUG
+        
+        guard setup(), let recorder = audioRecorder else {
+            return false
+        }
+        
+        if recorder.prepareToRecord() &&
+           recorder.record() {
+            #if DEBUG
                 print("recording")
-                #endif
-                return true
-            }
+            #endif
+            return true
         }
         
         return false
@@ -60,6 +74,7 @@ class AVFoundationRecorder: Recorder, AVAudioRecorderDelegate {
     override func stopRecording() -> Bool {
         if self.audioRecorder.isRecording {
             self.audioRecorder.stop()
+            self.audioRecorder = nil
             #if DEBUG
             print("stopped recording")
             #endif
