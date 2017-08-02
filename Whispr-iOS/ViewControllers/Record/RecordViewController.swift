@@ -12,30 +12,46 @@ import AVFoundation
 class RecordViewController: UIViewController {
     
     var recorder : Recorder = AVFoundationRecorder()
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
+    
+    @IBOutlet weak var recordButton: UIButton!
     
     @IBAction func buttonAction(_ sender: Any) {
-        
-        let audioSession = AVAudioSession.sharedInstance()
-        
-        do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with:.defaultToSpeaker)
-            try audioSession.setActive(true)
-        } catch let error as NSError {
-            print("audioSession error: \(error.localizedDescription)")
-            return
-        }
-        
         if self.recorder.isRecording() {
             self.recorder.stopRecording()
+            recordButton.titleLabel?.text = "Record"
+            self.recordButton.sizeToFit()
         }
         else {
-            self.recorder.record()
+            
+            nameFile({ (name) in
+                self.recorder.fileName = name
+                
+                self.recorder.record()
+                self.recordButton.titleLabel?.text = "Stop recording"
+                self.recordButton.sizeToFit()
+            })
         }
     }
     
+    private func nameFile(_ onNamed:@escaping (_ name:String) -> Void) {
+        let alertController = UIAlertController(title: "NameFile", message: "Give the file a name", preferredStyle: .alert)
+        alertController.addTextField(configurationHandler: nil)
+        
+        let confirmAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+            
+            guard   let textField = alertController.textFields?[0],
+                    let fileName = textField.text else {
+                return
+            }
+            
+            onNamed(fileName + ".m4a")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(confirmAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }

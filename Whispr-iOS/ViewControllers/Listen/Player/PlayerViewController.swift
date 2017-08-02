@@ -11,6 +11,8 @@ import AVFoundation
 
 class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
 
+    var urlToPlay: URL? = nil
+    
     var player : AVAudioPlayer? = nil
     lazy var updateTimer: Timer? = nil
     
@@ -29,6 +31,11 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func play(_ sender: Any) {
         
+        guard let url = urlToPlay else {
+            print("invalid URL")
+            return
+        }
+        
         let audioSession = AVAudioSession.sharedInstance()
         
         do {
@@ -39,13 +46,8 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
             return
         }
         
-        let dirPaths = FileManager.default.urls(for: .documentDirectory,
-                                                in: .userDomainMask)
-        
-        let soundFileURL = dirPaths[0].appendingPathComponent("sound.m4a")
-        
         do {
-            self.player = try AVAudioPlayer(contentsOf: soundFileURL)
+            self.player = try AVAudioPlayer(contentsOf: url)
             self.player?.delegate = self
             
             if (self.player?.prepareToPlay())! {

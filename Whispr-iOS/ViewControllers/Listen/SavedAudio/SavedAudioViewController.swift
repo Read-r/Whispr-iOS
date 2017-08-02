@@ -12,6 +12,8 @@ class SavedAudioViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    var datasource = [URL]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,27 +22,48 @@ class SavedAudioViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        do {
+            // Get the directory contents urls (including subfolders urls)
+            let directoryContents = try FileManager.default.contentsOfDirectory(at: Recorder.baseURL, includingPropertiesForKeys: nil, options: [])
+            print(directoryContents)
+            
+            // if you want to filter the directory contents you can do like this:
+            datasource.append(contentsOf: directoryContents.filter{ $0.pathExtension == "m4a" })
+            
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
         tableView.reloadData()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "AudioSegue",
+            let destVC = segue.destination as? PlayerViewController,
+            let url = sender as? URL {
+            destVC.urlToPlay = url 
+        }
     }
 }
 
 extension SavedAudioViewController : UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return datasource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AudioCell") as? SavedAudioTableViewCell else {
             return UITableViewCell()
         }
+        
+        let url = datasource[indexPath.row]
+        
+        cell.label.text = url.deletingPathExtension().lastPathComponent
         
         return cell
     }
@@ -52,6 +75,6 @@ extension SavedAudioViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "AudioSegue", sender: nil)
+        performSegue(withIdentifier: "AudioSegue", sender: datasource[indexPath.row])
     }
 }

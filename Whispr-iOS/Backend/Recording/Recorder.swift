@@ -9,6 +9,38 @@
 import UIKit
 
 class Recorder: NSObject {
+    
+    static var baseURL : URL {
+        let dirPaths = FileManager.default.urls(for: .documentDirectory,
+                                                in: .userDomainMask)
+        
+        let base = dirPaths[0].appendingPathComponent("audio", isDirectory: true)
+        
+        // first time setup
+        var isDirectory : ObjCBool = true
+        if !FileManager.default.fileExists(atPath: base.absoluteString, isDirectory: &isDirectory) {
+            do {
+                try FileManager.default.createDirectory(at: base, withIntermediateDirectories: false, attributes: nil)
+            }
+            catch let error as NSError {
+                print("\(error.localizedDescription)")
+            }
+        }
+        
+        return base
+    }
+    
+    var fileURL : URL? {
+        
+        guard fileName != "" else {
+            return nil
+        }
+        
+        return Recorder.baseURL.appendingPathComponent(fileName)
+    }
+    
+    var fileName : String = ""
+    
     func setup() -> Bool {
         fatalError("Must override function \"setup()\"!")
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4029B88F1F3092BA00638B52 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B88E1F3092BA00638B52 /* Storage.swift */; };
 		40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45E01F24F9C000519200 /* AppDelegate.swift */; };
 		40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DA45E71F24F9C100519200 /* Assets.xcassets */; };
 		40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */; };
@@ -27,6 +28,7 @@
 		40DA464C1F2FA87000519200 /* SavedAudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA464A1F2FA87000519200 /* SavedAudioTableViewCell.swift */; };
 		40DA464D1F2FA87000519200 /* SavedAudioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40DA464B1F2FA87000519200 /* SavedAudioTableViewCell.xib */; };
 		40DA46501F2FAA4500519200 /* StringTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA464F1F2FAA4500519200 /* StringTools.swift */; };
+		40DA46531F308D9E00519200 /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA46521F308D9E00519200 /* Record.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4029B88E1F3092BA00638B52 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = CoreData/Storage.swift; sourceTree = "<group>"; };
 		40DA45DD1F24F9C000519200 /* Whispr-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whispr-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA45E01F24F9C000519200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DA45E71F24F9C100519200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		40DA464A1F2FA87000519200 /* SavedAudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedAudioTableViewCell.swift; sourceTree = "<group>"; };
 		40DA464B1F2FA87000519200 /* SavedAudioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedAudioTableViewCell.xib; sourceTree = "<group>"; };
 		40DA464F1F2FAA4500519200 /* StringTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTools.swift; path = Extensions/StringTools.swift; sourceTree = "<group>"; };
+		40DA46521F308D9E00519200 /* Record.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Record.storyboard; path = Record/Record.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4029B88D1F30929D00638B52 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4029B88E1F3092BA00638B52 /* Storage.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		40DA45D41F24F9C000519200 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +217,7 @@
 		40DA461B1F24FAB200519200 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				40DA46511F308D6800519200 /* Record */,
 				40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */,
 				40DA461D1F24FAB200519200 /* Login.storyboard */,
 				40DA461E1F24FAB200519200 /* Main.storyboard */,
@@ -225,6 +238,7 @@
 		40DA46271F24FCF600519200 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				4029B88D1F30929D00638B52 /* CoreData */,
 				40DA46281F24FCF600519200 /* Recording */,
 			);
 			path = Backend;
@@ -282,6 +296,14 @@
 				40DA464F1F2FAA4500519200 /* StringTools.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		40DA46511F308D6800519200 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				40DA46521F308D9E00519200 /* Record.storyboard */,
+			);
+			name = Record;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +421,7 @@
 				40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */,
 				40DA46211F24FAB200519200 /* Main.storyboard in Resources */,
 				40DA46301F2C777900519200 /* Listen.storyboard in Resources */,
+				40DA46531F308D9E00519200 /* Record.storyboard in Resources */,
 				40DA464D1F2FA87000519200 /* SavedAudioTableViewCell.xib in Resources */,
 				40DA46201F24FAB200519200 /* Login.storyboard in Resources */,
 			);
@@ -434,6 +457,7 @@
 				40DA46481F2FA84500519200 /* SavedAudioViewController.swift in Sources */,
 				40DA462C1F24FCF600519200 /* Recorder.swift in Sources */,
 				40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */,
+				4029B88F1F3092BA00638B52 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

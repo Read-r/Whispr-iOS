@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kE2-cm-Gc5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Record-->
+        <scene sceneID="DRb-Wg-AcS">
+            <objects>
+                <viewController id="kE2-cm-Gc5" customClass="RecordViewController" customModule="Whispr_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i7x-8n-rq1"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQs-Fk-plW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0J-Ls-6ep">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-zJ-3RE">
+                                <rect key="frame" x="163" y="318" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="kE2-cm-Gc5" eventType="touchUpInside" id="Ua2-dj-HcM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BLA-zJ-3RE" firstAttribute="centerX" secondItem="B0J-Ls-6ep" secondAttribute="centerX" id="G3e-Sc-wmJ"/>
+                            <constraint firstItem="BLA-zJ-3RE" firstAttribute="centerY" secondItem="B0J-Ls-6ep" secondAttribute="centerY" id="niy-mM-Hly"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Record" id="pAp-YF-Dz9"/>
+                    <connections>
+                        <outlet property="recordButton" destination="BLA-zJ-3RE" id="UKG-33-osD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyC-CN-LLq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="-149.77511244377811"/>
+        </scene>
+    </scenes>
+</document>
