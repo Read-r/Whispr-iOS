@@ -11,15 +11,16 @@ import AVFoundation
 
 class RecordViewController: UIViewController {
     
+    var job: Job? = nil
+    
     var recorder : Recorder = AVFoundationRecorder()
     
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var textView: UITextView!
     
     @IBAction func buttonAction(_ sender: Any) {
         if self.recorder.isRecording() {
-            self.recorder.stopRecording()
-            recordButton.titleLabel?.text = "Record"
-            self.recordButton.sizeToFit()
+            stopRecording()
         }
         else {
             
@@ -31,6 +32,34 @@ class RecordViewController: UIViewController {
                 self.recordButton.sizeToFit()
             })
         }
+    }
+    
+    @IBAction func dismiss(_ sender: Any) {
+        cancelRecording()
+        
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    private func cancelRecording() {
+        stopRecording()
+        
+        guard let url = recorder.fileURL else {
+            return
+        }
+        
+        do {
+            try FileManager.default.removeItem(at: url)
+        }
+        catch let error as NSError {
+            
+            print(error.localizedDescription)
+        }
+    }
+    
+    private func stopRecording() {
+        recorder.stopRecording()
+        recordButton.titleLabel?.text = "Record"
+        recordButton.sizeToFit()
     }
     
     private func nameFile(_ onNamed:@escaping (_ name:String) -> Void) {
@@ -53,5 +82,11 @@ class RecordViewController: UIViewController {
         alertController.addAction(confirmAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        textView.text = job?.text ?? ""
     }
 }

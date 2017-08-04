@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4029B88F1F3092BA00638B52 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B88E1F3092BA00638B52 /* Storage.swift */; };
+		4029B8931F322EDD00638B52 /* TakenJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */; };
+		4029B8961F3231E300638B52 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8951F3231E300638B52 /* Job.swift */; };
+		4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */; };
+		4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */; };
 		40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45E01F24F9C000519200 /* AppDelegate.swift */; };
 		40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DA45E71F24F9C100519200 /* Assets.xcassets */; };
 		40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */; };
@@ -64,6 +68,10 @@
 
 /* Begin PBXFileReference section */
 		4029B88E1F3092BA00638B52 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = CoreData/Storage.swift; sourceTree = "<group>"; };
+		4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakenJobsViewController.swift; path = TakenJobs/TakenJobsViewController.swift; sourceTree = "<group>"; };
+		4029B8951F3231E300638B52 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Job.swift; path = Objects/Job.swift; sourceTree = "<group>"; };
+		4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakenJobTableViewCell.swift; path = TakenJobs/Cells/TakenJobTableViewCell.swift; sourceTree = "<group>"; };
+		4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TakenJobTableViewCell.xib; path = TakenJobs/Cells/TakenJobTableViewCell.xib; sourceTree = "<group>"; };
 		40DA45DD1F24F9C000519200 /* Whispr-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whispr-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA45E01F24F9C000519200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DA45E71F24F9C100519200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +135,39 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
+		4029B8901F322E8300638B52 /* TakenJobs */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8971F3233E500638B52 /* Cells */,
+				4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */,
+			);
+			name = TakenJobs;
+			sourceTree = "<group>";
+		};
+		4029B8911F322EA000638B52 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Record;
+			sourceTree = "<group>";
+		};
+		4029B8941F322FCA00638B52 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8951F3231E300638B52 /* Job.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		4029B8971F3233E500638B52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */,
+				4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		40DA45D41F24F9C000519200 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +192,7 @@
 		40DA45DF1F24F9C000519200 /* Whispr-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8941F322FCA00638B52 /* Objects */,
 				40DA464E1F2FA9E800519200 /* Extensions */,
 				40DA46271F24FCF600519200 /* Backend */,
 				40DA461B1F24FAB200519200 /* Interface */,
@@ -209,6 +251,8 @@
 		40DA46161F24FAA400519200 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8911F322EA000638B52 /* Record */,
+				4029B8901F322E8300638B52 /* TakenJobs */,
 				40DA46171F24FAA400519200 /* RecordViewController.swift */,
 			);
 			path = Record;
@@ -424,6 +468,7 @@
 				40DA46531F308D9E00519200 /* Record.storyboard in Resources */,
 				40DA464D1F2FA87000519200 /* SavedAudioTableViewCell.xib in Resources */,
 				40DA46201F24FAB200519200 /* Login.storyboard in Resources */,
+				4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +500,10 @@
 				40DA46501F2FAA4500519200 /* StringTools.swift in Sources */,
 				40DA46451F2FA7FA00519200 /* PlayerViewController.swift in Sources */,
 				40DA46481F2FA84500519200 /* SavedAudioViewController.swift in Sources */,
+				4029B8961F3231E300638B52 /* Job.swift in Sources */,
 				40DA462C1F24FCF600519200 /* Recorder.swift in Sources */,
+				4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */,
+				4029B8931F322EDD00638B52 /* TakenJobsViewController.swift in Sources */,
 				40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */,
 				4029B88F1F3092BA00638B52 /* Storage.swift in Sources */,
 			);

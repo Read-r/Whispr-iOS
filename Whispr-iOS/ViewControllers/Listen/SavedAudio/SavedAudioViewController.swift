@@ -75,6 +75,8 @@ extension SavedAudioViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         performSegue(withIdentifier: "AudioSegue", sender: datasource[indexPath.row])
     }
 }

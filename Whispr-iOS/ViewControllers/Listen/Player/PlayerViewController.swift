@@ -19,7 +19,7 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var progressBar: UISlider!
     
     private func timerFunc() -> Timer {
-        return Timer(timeInterval: 0.2, repeats: true, block: { (timer) in
+        return Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
             self.progressBar.value = Float((self.player?.currentTime)!)
         })
     }
@@ -39,7 +39,8 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
         let audioSession = AVAudioSession.sharedInstance()
         
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with:.defaultToSpeaker)
+            try audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord,
+                                         with:.defaultToSpeaker)
             try audioSession.setActive(true)
         } catch let error as NSError {
             print("audioSession error: \(error.localizedDescription)")
@@ -60,7 +61,7 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
                         updateTimer = nil
                     }
                     
-                    
+                    self.progressBar.value = 0.0
                     self.progressBar.minimumValue = 0.0
                     self.progressBar.maximumValue = Float((self.player?.duration)!)
                     
