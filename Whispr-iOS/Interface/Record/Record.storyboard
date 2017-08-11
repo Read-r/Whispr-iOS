@@ -42,6 +42,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn1-eW-gon">
+                                <rect key="frame" x="166" y="538" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GQn-fA-Ild"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-zJ-3RE">
                                 <rect key="frame" x="163" y="500" width="49" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +62,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Sn1-eW-gon" firstAttribute="centerX" secondItem="B0J-Ls-6ep" secondAttribute="centerX" id="81r-jx-yba"/>
                             <constraint firstItem="BLA-zJ-3RE" firstAttribute="top" secondItem="6gN-PC-3as" secondAttribute="bottom" constant="8" id="ArB-Zf-5UP"/>
+                            <constraint firstItem="Sn1-eW-gon" firstAttribute="top" secondItem="BLA-zJ-3RE" secondAttribute="bottom" constant="8" id="DEO-ws-j1B"/>
                             <constraint firstItem="BLA-zJ-3RE" firstAttribute="centerX" secondItem="B0J-Ls-6ep" secondAttribute="centerX" id="G3e-Sc-wmJ"/>
                             <constraint firstItem="6gN-PC-3as" firstAttribute="leading" secondItem="B0J-Ls-6ep" secondAttribute="leadingMargin" id="Hrv-h5-IYJ"/>
                             <constraint firstItem="6gN-PC-3as" firstAttribute="trailing" secondItem="B0J-Ls-6ep" secondAttribute="trailingMargin" id="UPO-R2-kPX"/>
@@ -65,6 +76,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bD7-UD-laH"/>
                     <connections>
+                        <outlet property="durationLabel" destination="Sn1-eW-gon" id="dIe-zo-FdR"/>
                         <outlet property="recordButton" destination="BLA-zJ-3RE" id="UKG-33-osD"/>
                         <outlet property="textView" destination="6gN-PC-3as" id="C4e-1x-QyQ"/>
                     </connections>

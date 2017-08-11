@@ -14,9 +14,12 @@ class RecordViewController: UIViewController {
     var job: Job? = nil
     
     var recorder : Recorder = AVFoundationRecorder()
+    private var currentDuration = 0
+    private var durationUpdateTimer: Timer? = nil
     
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var durationLabel: UILabel!
     
     @IBAction func buttonAction(_ sender: Any) {
         if self.recorder.isRecording() {
@@ -30,6 +33,8 @@ class RecordViewController: UIViewController {
                 self.recorder.record()
                 self.recordButton.titleLabel?.text = "Stop recording"
                 self.recordButton.sizeToFit()
+                
+                self.durationUpdateTimer = self.timerFunc()
             })
         }
     }
@@ -38,6 +43,13 @@ class RecordViewController: UIViewController {
         cancelRecording()
         
         presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    private func timerFunc() -> Timer {
+        return Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+            self.currentDuration += 1
+            self.durationLabel.text = String(self.currentDuration)
+        })
     }
     
     private func cancelRecording() {
@@ -60,6 +72,11 @@ class RecordViewController: UIViewController {
         recorder.stopRecording()
         recordButton.titleLabel?.text = "Record"
         recordButton.sizeToFit()
+        
+        if let timer = durationUpdateTimer {
+            timer.invalidate()
+            durationUpdateTimer = nil
+        }
     }
     
     private func nameFile(_ onNamed:@escaping (_ name:String) -> Void) {
@@ -88,5 +105,7 @@ class RecordViewController: UIViewController {
         super.viewWillAppear(animated)
         
         textView.text = job?.text ?? ""
+        self.currentDuration = 0
+        self.durationLabel.text = String(self.currentDuration)
     }
 }

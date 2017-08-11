@@ -12,6 +12,31 @@
 		4029B8961F3231E300638B52 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8951F3231E300638B52 /* Job.swift */; };
 		4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */; };
 		4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */; };
+		4029B89D1F34F5DA00638B52 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B89C1F34F5DA00638B52 /* Settings.storyboard */; };
+		4029B8A21F38814200638B52 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8A11F38814200638B52 /* Request.storyboard */; };
+		4029B8A41F38817200638B52 /* CreateTextRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */; };
+		4029B8A71F38819D00638B52 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A61F38819D00638B52 /* RequestViewController.swift */; };
+		4029B8A91F3888F600638B52 /* RequestOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */; };
+		4029B8B01F388ADC00638B52 /* PickUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */; };
+		4029B8B11F388ADC00638B52 /* PickUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */; };
+		4029B8BB1F38BA3A00638B52 /* TableViewCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BA1F38BA3A00638B52 /* TableViewCompatible.swift */; };
+		4029B8BD1F38BF3000638B52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BC1F38BF3000638B52 /* User.swift */; };
+		4029B8C11F38CFE700638B52 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */; };
+		4029B8C21F38CFE700638B52 /* DateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */; };
+		4029B8C51F38D01400638B52 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */; };
+		4029B8C61F38D01400638B52 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */; };
+		4029B8C91F39C62400638B52 /* BrowseUsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */; };
+		4029B8CD1F39C6BE00638B52 /* BrowseUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */; };
+		4029B8CF1F39C78000638B52 /* ViewControllerTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */; };
+		4029B8D11F39C79B00638B52 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D01F39C79B00638B52 /* DateTools.swift */; };
+		4029B8D51F39CBCC00638B52 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */; };
+		4029B8D61F39CBCC00638B52 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */; };
+		4029B8D91F39CCDF00638B52 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */; };
+		4029B8DB1F3AF3F700638B52 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8DA1F3AF3F700638B52 /* DateTools.swift */; };
+		4029B8E41F3CB94500638B52 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8E31F3CB94500638B52 /* NotificationViewController.swift */; };
+		4029B8E61F3CB9A500638B52 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8E51F3CB9A500638B52 /* NotificationView.swift */; };
+		4051E3F61F3CBC1900DC1EBB /* ViewTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */; };
+		4051E3F81F3CC1B700DC1EBB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */; };
 		40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45E01F24F9C000519200 /* AppDelegate.swift */; };
 		40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DA45E71F24F9C100519200 /* Assets.xcassets */; };
 		40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */; };
@@ -72,6 +97,31 @@
 		4029B8951F3231E300638B52 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Job.swift; path = Objects/Job.swift; sourceTree = "<group>"; };
 		4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakenJobTableViewCell.swift; path = TakenJobs/Cells/TakenJobTableViewCell.swift; sourceTree = "<group>"; };
 		4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TakenJobTableViewCell.xib; path = TakenJobs/Cells/TakenJobTableViewCell.xib; sourceTree = "<group>"; };
+		4029B89C1F34F5DA00638B52 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		4029B8A11F38814200638B52 /* Request.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
+		4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTextRequestViewController.swift; path = Request/CreateTextRequestViewController.swift; sourceTree = "<group>"; };
+		4029B8A61F38819D00638B52 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestViewController.swift; path = Request/RequestViewController.swift; sourceTree = "<group>"; };
+		4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestOptionsViewController.swift; path = Request/RequestOptionsViewController.swift; sourceTree = "<group>"; };
+		4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickUserTableViewCell.swift; path = Request/Cells/PickUserTableViewCell.swift; sourceTree = "<group>"; };
+		4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PickUserTableViewCell.xib; path = Request/Cells/PickUserTableViewCell.xib; sourceTree = "<group>"; };
+		4029B8BA1F38BA3A00638B52 /* TableViewCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCompatible.swift; path = Protocols/TableViewCompatible.swift; sourceTree = "<group>"; };
+		4029B8BC1F38BF3000638B52 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Objects/User.swift; sourceTree = "<group>"; };
+		4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTableViewCell.swift; path = Request/Cells/DateTableViewCell.swift; sourceTree = "<group>"; };
+		4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateTableViewCell.xib; path = Request/Cells/DateTableViewCell.xib; sourceTree = "<group>"; };
+		4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = Request/Cells/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DatePickerTableViewCell.xib; path = Request/Cells/DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BrowseUsers.storyboard; sourceTree = "<group>"; };
+		4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowseUsersViewController.swift; path = Users/BrowseUsers/BrowseUsersViewController.swift; sourceTree = "<group>"; };
+		4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTools.swift; path = Extensions/ViewControllerTools.swift; sourceTree = "<group>"; };
+		4029B8D01F39C79B00638B52 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTools.swift; path = Extensions/DateTools.swift; sourceTree = "<group>"; };
+		4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Users/BrowseUsers/Cells/UserTableViewCell.swift; sourceTree = "<group>"; };
+		4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTableViewCell.xib; path = Users/BrowseUsers/Cells/UserTableViewCell.xib; sourceTree = "<group>"; };
+		4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileViewController.swift; path = Users/UserDetails/UserProfileViewController.swift; sourceTree = "<group>"; };
+		4029B8DA1F3AF3F700638B52 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
+		4029B8E31F3CB94500638B52 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = Notifications/NotificationViewController.swift; sourceTree = "<group>"; };
+		4029B8E51F3CB9A500638B52 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationView.swift; path = Notifications/NotificationView.swift; sourceTree = "<group>"; };
+		4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTools.swift; path = Extensions/ViewTools.swift; sourceTree = "<group>"; };
+		4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationController.swift; path = Notifications/NotificationController.swift; sourceTree = "<group>"; };
 		40DA45DD1F24F9C000519200 /* Whispr-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whispr-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA45E01F24F9C000519200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40DA45E71F24F9C100519200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				4029B8951F3231E300638B52 /* Job.swift */,
+				4029B8BC1F38BF3000638B52 /* User.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -166,6 +217,90 @@
 				4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4029B89E1F38802D00638B52 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8AA1F388A8200638B52 /* Cells */,
+				4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */,
+				4029B8A61F38819D00638B52 /* RequestViewController.swift */,
+				4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		4029B8AA1F388A8200638B52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */,
+				4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */,
+				4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */,
+				4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */,
+				4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */,
+				4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4029B8B91F38BA1700638B52 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8BA1F38BA3A00638B52 /* TableViewCompatible.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4029B8CA1F39C68600638B52 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8D71F39CCA800638B52 /* UserDetails */,
+				4029B8CB1F39C69A00638B52 /* BrowseUsers */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		4029B8CB1F39C69A00638B52 /* BrowseUsers */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8D21F39CBA300638B52 /* Cells */,
+				4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */,
+			);
+			name = BrowseUsers;
+			sourceTree = "<group>";
+		};
+		4029B8D21F39CBA300638B52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */,
+				4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4029B8D71F39CCA800638B52 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */,
+			);
+			name = UserDetails;
+			sourceTree = "<group>";
+		};
+		4029B8DC1F3CB67500638B52 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		4029B8DD1F3CB77E00638B52 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4029B8E31F3CB94500638B52 /* NotificationViewController.swift */,
+				4029B8E51F3CB9A500638B52 /* NotificationView.swift */,
+				4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 		40DA45D41F24F9C000519200 = {
@@ -192,6 +327,7 @@
 		40DA45DF1F24F9C000519200 /* Whispr-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8B91F38BA1700638B52 /* Protocols */,
 				4029B8941F322FCA00638B52 /* Objects */,
 				40DA464E1F2FA9E800519200 /* Extensions */,
 				40DA46271F24FCF600519200 /* Backend */,
@@ -209,6 +345,7 @@
 			children = (
 				40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */,
 				40DA45F71F24F9C100519200 /* Info.plist */,
+				4029B8DA1F3AF3F700638B52 /* DateTools.swift */,
 			);
 			path = "Whispr-iOSTests";
 			sourceTree = "<group>";
@@ -225,6 +362,8 @@
 		40DA46101F24FAA400519200 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8CA1F39C68600638B52 /* Users */,
+				4029B89E1F38802D00638B52 /* Request */,
 				40DA463A1F2FA61B00519200 /* Listen */,
 				40DA46111F24FAA400519200 /* Editor */,
 				40DA46121F24FAA400519200 /* Login */,
@@ -266,6 +405,9 @@
 				40DA461D1F24FAB200519200 /* Login.storyboard */,
 				40DA461E1F24FAB200519200 /* Main.storyboard */,
 				40DA462F1F2C777900519200 /* Listen.storyboard */,
+				4029B89C1F34F5DA00638B52 /* Settings.storyboard */,
+				4029B8A11F38814200638B52 /* Request.storyboard */,
+				4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -282,6 +424,8 @@
 		40DA46271F24FCF600519200 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8DD1F3CB77E00638B52 /* Notifications */,
+				4029B8DC1F3CB67500638B52 /* Network */,
 				4029B88D1F30929D00638B52 /* CoreData */,
 				40DA46281F24FCF600519200 /* Recording */,
 			);
@@ -337,7 +481,10 @@
 		40DA464E1F2FA9E800519200 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4029B8D01F39C79B00638B52 /* DateTools.swift */,
 				40DA464F1F2FAA4500519200 /* StringTools.swift */,
+				4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */,
+				4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -463,12 +610,19 @@
 			files = (
 				40DA461F1F24FAB200519200 /* LaunchScreen.storyboard in Resources */,
 				40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */,
+				4029B8B11F388ADC00638B52 /* PickUserTableViewCell.xib in Resources */,
+				4029B8A21F38814200638B52 /* Request.storyboard in Resources */,
+				4029B8D61F39CBCC00638B52 /* UserTableViewCell.xib in Resources */,
+				4029B89D1F34F5DA00638B52 /* Settings.storyboard in Resources */,
 				40DA46211F24FAB200519200 /* Main.storyboard in Resources */,
 				40DA46301F2C777900519200 /* Listen.storyboard in Resources */,
+				4029B8C91F39C62400638B52 /* BrowseUsers.storyboard in Resources */,
+				4029B8C21F38CFE700638B52 /* DateTableViewCell.xib in Resources */,
 				40DA46531F308D9E00519200 /* Record.storyboard in Resources */,
 				40DA464D1F2FA87000519200 /* SavedAudioTableViewCell.xib in Resources */,
 				40DA46201F24FAB200519200 /* Login.storyboard in Resources */,
 				4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */,
+				4029B8C61F38D01400638B52 /* DatePickerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,19 +647,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4051E3F81F3CC1B700DC1EBB /* NotificationController.swift in Sources */,
 				40DA464C1F2FA87000519200 /* SavedAudioTableViewCell.swift in Sources */,
+				4029B8B01F388ADC00638B52 /* PickUserTableViewCell.swift in Sources */,
 				40DA46181F24FAA400519200 /* LoginViewController.swift in Sources */,
+				4029B8C51F38D01400638B52 /* DatePickerTableViewCell.swift in Sources */,
+				4029B8A71F38819D00638B52 /* RequestViewController.swift in Sources */,
 				40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */,
 				40DA462B1F24FCF600519200 /* AVFoundationRecorder.swift in Sources */,
+				4029B8A91F3888F600638B52 /* RequestOptionsViewController.swift in Sources */,
 				40DA46501F2FAA4500519200 /* StringTools.swift in Sources */,
 				40DA46451F2FA7FA00519200 /* PlayerViewController.swift in Sources */,
+				4029B8C11F38CFE700638B52 /* DateTableViewCell.swift in Sources */,
 				40DA46481F2FA84500519200 /* SavedAudioViewController.swift in Sources */,
 				4029B8961F3231E300638B52 /* Job.swift in Sources */,
 				40DA462C1F24FCF600519200 /* Recorder.swift in Sources */,
+				4029B8D51F39CBCC00638B52 /* UserTableViewCell.swift in Sources */,
 				4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */,
 				4029B8931F322EDD00638B52 /* TakenJobsViewController.swift in Sources */,
 				40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */,
+				4029B8D11F39C79B00638B52 /* DateTools.swift in Sources */,
 				4029B88F1F3092BA00638B52 /* Storage.swift in Sources */,
+				4029B8A41F38817200638B52 /* CreateTextRequestViewController.swift in Sources */,
+				4029B8D91F39CCDF00638B52 /* UserProfileViewController.swift in Sources */,
+				4029B8CF1F39C78000638B52 /* ViewControllerTools.swift in Sources */,
+				4051E3F61F3CBC1900DC1EBB /* ViewTools.swift in Sources */,
+				4029B8E61F3CB9A500638B52 /* NotificationView.swift in Sources */,
+				4029B8E41F3CB94500638B52 /* NotificationViewController.swift in Sources */,
+				4029B8CD1F39C6BE00638B52 /* BrowseUsersViewController.swift in Sources */,
+				4029B8BB1F38BA3A00638B52 /* TableViewCompatible.swift in Sources */,
+				4029B8BD1F38BF3000638B52 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */,
+				4029B8DB1F3AF3F700638B52 /* DateTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
