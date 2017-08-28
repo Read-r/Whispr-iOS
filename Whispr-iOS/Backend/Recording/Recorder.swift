@@ -16,6 +16,7 @@ class Recorder: NSObject {
         
         let base = dirPaths[0].appendingPathComponent("audio", isDirectory: true)
         
+        
         // first time setup
         var isDirectory : ObjCBool = true
         if !FileManager.default.fileExists(atPath: base.absoluteString, isDirectory: &isDirectory) {
@@ -27,7 +28,17 @@ class Recorder: NSObject {
             }
         }
         
-        return base
+        let recorded = base.appendingPathComponent("recorded", isDirectory:true)
+        if !FileManager.default.fileExists(atPath: recorded.absoluteString, isDirectory: &isDirectory) {
+            do {
+                try FileManager.default.createDirectory(at: recorded, withIntermediateDirectories: false, attributes: nil)
+            }
+            catch let error as NSError {
+                print("\(error.localizedDescription)")
+            }
+        }
+        
+        return recorded
     }
     
     var fileURL : URL? {

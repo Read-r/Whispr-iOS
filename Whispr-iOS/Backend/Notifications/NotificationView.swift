@@ -13,7 +13,7 @@ class NotificationView: UIView {
     let notificationLabel : UILabel = {
         let label = UILabel()
         //label.backgroundColor = UIColor.blue
-        label.text = "aslkdjaslkdjaslkdj"
+        label.text = ""
         label.textAlignment = .center
         
         return label

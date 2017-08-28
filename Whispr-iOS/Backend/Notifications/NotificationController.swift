@@ -8,6 +8,9 @@
 
 import UIKit
 
+/*
+    Adds and displays a view as a subview of the UIWindow, thereby overlaying everything
+ */
 class NotificationController: NSObject {
     
     static private let margin: CGFloat = 10.0
@@ -17,6 +20,11 @@ class NotificationController: NSObject {
         case bottom
     }
     
+    /*
+        Displays a notification, with a text, at the top or bottom of the screen.
+        If displayed at the top, some extra padding is applied to not overlay the 
+        status bar.
+     */
     static func displayNotification(_ text:String, position:Position) {
         
         guard let window = UIApplication.shared.keyWindow else {
@@ -27,9 +35,11 @@ class NotificationController: NSObject {
         
         var baseRect = rect
         
+        // Calculate the base and destination rects. Default to top.
         switch position {
         case .bottom:
-            baseRect.origin = CGPoint(x: NotificationController.margin, y: window.bounds.size.height + rect.size.height)
+            baseRect.origin = CGPoint(x: NotificationController.margin,
+                                      y: window.bounds.size.height + rect.size.height)
             rect.origin.y = window.bounds.size.height - rect.size.height - NotificationController.margin
             break
         case .top: fallthrough
@@ -42,7 +52,6 @@ class NotificationController: NSObject {
         let notification = NotificationViewController(rect)
         notification.notificationText = text
         notification.position = position
-        
         notification.view.frame = baseRect
         notification.view.alpha = 0.0
         
@@ -62,7 +71,10 @@ class NotificationController: NSObject {
     }
     
     static func dismiss(notification:NotificationViewController) {
-        var destinationRect = CGRect(x: NotificationController.margin, y: 0 - notification.view.bounds.height, width: UIScreen.main.bounds.width - (NotificationController.margin * 2.0), height: notification.view.bounds.height)
+        var destinationRect = CGRect(x: NotificationController.margin, 
+                                     y: 0 - notification.view.bounds.height, 
+                                     width: UIScreen.main.bounds.width - (NotificationController.margin * 2.0),
+                                     height: notification.view.bounds.height)
         
         switch notification.position {
         case .bottom:
@@ -75,10 +87,16 @@ class NotificationController: NSObject {
             break
         case .top: fallthrough
         default:
-            destinationRect = CGRect(x: NotificationController.margin, y: 0 - notification.view.bounds.height, width: UIScreen.main.bounds.width - (NotificationController.margin * 2.0), height: notification.view.bounds.height)
+            destinationRect = CGRect(x: NotificationController.margin,
+                                     y: 0 - notification.view.bounds.height,
+                                     width: UIScreen.main.bounds.width - (NotificationController.margin * 2.0),
+                                     height: notification.view.bounds.height)
         }
         
-        UIView.animate(withDuration: 0.25, delay: 5.0, options: UIViewAnimationOptions(rawValue: 0), animations: {
+        UIView.animate(withDuration: 0.25, 
+                       delay: 5.0, 
+                       options: UIViewAnimationOptions(rawValue: 0),
+                       animations: {
             guard !notification.dismissed else {
                 return
             }

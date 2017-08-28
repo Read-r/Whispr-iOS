@@ -53,21 +53,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVY-rL-Q8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4113" y="535"/>
+            <point key="canvasLocation" x="4537" y="535"/>
         </scene>
         <!--Listen-->
         <scene sceneID="azO-yy-Js2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zKp-BI-zqS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Listen" id="Wnr-9i-w0T"/>
+                    <tabBarItem key="tabBarItem" title="Listen" id="1GN-b0-Jcn"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iDV-4J-PcB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="55L-4W-9aJ" kind="relationship" relationship="rootViewController" id="Hjg-2x-FiW"/>
+                        <segue destination="55L-4W-9aJ" kind="relationship" relationship="rootViewController" id="dvW-Y8-CGK"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYv-Db-HQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,21 +78,43 @@
         <!--Saved Audio View Controller-->
         <scene sceneID="MJN-qa-531">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dt5-QC-GLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="55L-4W-9aJ" customClass="SavedAudioViewController" customModule="Whispr_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hve-jL-ELZ">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S6T-Ei-Oko"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRx-17-Ucq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YMJ-fm-heM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-xv-yCt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="yDM-kZ-Fhy"/>
+                        <constraints>
+                            <constraint firstItem="YX0-xv-yCt" firstAttribute="leading" secondItem="YMJ-fm-heM" secondAttribute="leading" id="2nu-xP-X1O"/>
+                            <constraint firstAttribute="trailing" secondItem="YX0-xv-yCt" secondAttribute="trailing" id="3MM-wQ-kuy"/>
+                            <constraint firstAttribute="bottom" secondItem="YX0-xv-yCt" secondAttribute="bottom" id="jCB-HA-P0C"/>
+                            <constraint firstItem="YX0-xv-yCt" firstAttribute="top" secondItem="YMJ-fm-heM" secondAttribute="top" id="ykr-Bg-MP6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yDM-kZ-Fhy">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="2Kb-hL-Dzx">
+                            <connections>
+                                <action selector="filterAction:" destination="55L-4W-9aJ" id="nrJ-W4-Irn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="hve-jL-ELZ" id="1hh-nC-te8"/>
+                        <outlet property="tableView" destination="YX0-xv-yCt" id="BJY-IG-y1p"/>
                         <segue destination="aCX-TK-1MU" kind="show" identifier="AudioSegue" id="gpJ-kw-c6U"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dt5-QC-GLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3145" y="535"/>
+            <point key="canvasLocation" x="3372" y="534.78260869565224"/>
         </scene>
     </scenes>
 </document>
