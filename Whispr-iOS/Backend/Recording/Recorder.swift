@@ -56,15 +56,15 @@ class Recorder: NSObject {
         fatalError("Must override function \"setup()\"!")
     }
     
-    func record() -> Bool {
+    @discardableResult func record() -> Bool {
         fatalError("Must override function \"record()\"!")
     }
     
-    func stopRecording() -> Bool {
+    @discardableResult func stopRecording() -> Bool {
         fatalError("Must override function \"stopRecording()\"!")
     }
     
-    func isRecording() -> Bool {
+    @discardableResult func isRecording() -> Bool {
         fatalError("Must override function \"isRecording()\"!")
     }
     

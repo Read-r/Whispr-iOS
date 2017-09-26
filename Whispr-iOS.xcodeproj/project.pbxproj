@@ -11,58 +11,51 @@
 		4029B8931F322EDD00638B52 /* TakenJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */; };
 		4029B8961F3231E300638B52 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8951F3231E300638B52 /* Job.swift */; };
 		4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */; };
-		4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */; };
-		4029B89D1F34F5DA00638B52 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B89C1F34F5DA00638B52 /* Settings.storyboard */; };
-		4029B8A21F38814200638B52 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8A11F38814200638B52 /* Request.storyboard */; };
 		4029B8A41F38817200638B52 /* CreateTextRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */; };
 		4029B8A71F38819D00638B52 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A61F38819D00638B52 /* RequestViewController.swift */; };
 		4029B8A91F3888F600638B52 /* RequestOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */; };
 		4029B8B01F388ADC00638B52 /* PickUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */; };
-		4029B8B11F388ADC00638B52 /* PickUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */; };
 		4029B8BB1F38BA3A00638B52 /* TableViewCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BA1F38BA3A00638B52 /* TableViewCompatible.swift */; };
 		4029B8BD1F38BF3000638B52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BC1F38BF3000638B52 /* User.swift */; };
 		4029B8C11F38CFE700638B52 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */; };
-		4029B8C21F38CFE700638B52 /* DateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */; };
 		4029B8C51F38D01400638B52 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */; };
-		4029B8C61F38D01400638B52 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */; };
-		4029B8C91F39C62400638B52 /* BrowseUsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */; };
 		4029B8CD1F39C6BE00638B52 /* BrowseUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */; };
 		4029B8CF1F39C78000638B52 /* ViewControllerTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */; };
 		4029B8D11F39C79B00638B52 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D01F39C79B00638B52 /* DateTools.swift */; };
 		4029B8D51F39CBCC00638B52 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */; };
-		4029B8D61F39CBCC00638B52 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */; };
-		4029B8D91F39CCDF00638B52 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */; };
 		4029B8DB1F3AF3F700638B52 /* DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8DA1F3AF3F700638B52 /* DateTools.swift */; };
 		4029B8E41F3CB94500638B52 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8E31F3CB94500638B52 /* NotificationViewController.swift */; };
 		4029B8E61F3CB9A500638B52 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B8E51F3CB9A500638B52 /* NotificationView.swift */; };
 		4051E3F61F3CBC1900DC1EBB /* ViewTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */; };
 		4051E3F81F3CC1B700DC1EBB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */; };
-		40B87E701F3DB0EF00D0779D /* RecordedAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E6F1F3DB0EF00D0779D /* RecordedAudioViewController.swift */; };
-		40B87E761F3DB16500D0779D /* SavedAudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E731F3DB16500D0779D /* SavedAudioTableViewCell.swift */; };
-		40B87E771F3DB16500D0779D /* SavedAudioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B87E741F3DB16500D0779D /* SavedAudioTableViewCell.xib */; };
-		40B87E781F3DB16500D0779D /* SavedAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E751F3DB16500D0779D /* SavedAudioViewController.swift */; };
-		40B87E7A1F3DB1A500D0779D /* BrowseAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E791F3DB1A500D0779D /* BrowseAudioViewController.swift */; };
-		40B87E7F1F404B7B00D0779D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E7E1F404B7B00D0779D /* FilterViewController.swift */; };
-		40B87E811F404C2A00D0779D /* FilteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E801F404C2A00D0779D /* FilteringView.swift */; };
 		40B87E831F40727600D0779D /* DictionaryTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B87E821F40727600D0779D /* DictionaryTools.swift */; };
 		40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45E01F24F9C000519200 /* AppDelegate.swift */; };
 		40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DA45E71F24F9C100519200 /* Assets.xcassets */; };
 		40DA45F61F24F9C100519200 /* Whispr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA45F51F24F9C100519200 /* Whispr_iOSTests.swift */; };
 		40DA46011F24F9C100519200 /* Whispr_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46001F24F9C100519200 /* Whispr_iOSUITests.swift */; };
-		40DA46181F24FAA400519200 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46131F24FAA400519200 /* LoginViewController.swift */; };
 		40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46171F24FAA400519200 /* RecordViewController.swift */; };
-		40DA461F1F24FAB200519200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */; };
-		40DA46201F24FAB200519200 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461D1F24FAB200519200 /* Login.storyboard */; };
-		40DA46211F24FAB200519200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA461E1F24FAB200519200 /* Main.storyboard */; };
-		40DA46231F24FB2700519200 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA46221F24FB2700519200 /* AudioKit.framework */; };
-		40DA46241F24FB2700519200 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA46221F24FB2700519200 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40DA462B1F24FCF600519200 /* AVFoundationRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46291F24FCF600519200 /* AVFoundationRecorder.swift */; };
 		40DA462C1F24FCF600519200 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA462A1F24FCF600519200 /* Recorder.swift */; };
 		40DA462E1F24FD7300519200 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DA462D1F24FD7300519200 /* AVFoundation.framework */; };
-		40DA46301F2C777900519200 /* Listen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA462F1F2C777900519200 /* Listen.storyboard */; };
-		40DA46451F2FA7FA00519200 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA46441F2FA7FA00519200 /* PlayerViewController.swift */; };
 		40DA46501F2FAA4500519200 /* StringTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DA464F1F2FAA4500519200 /* StringTools.swift */; };
-		40DA46531F308D9E00519200 /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DA46521F308D9E00519200 /* Record.storyboard */; };
+		731648231F714642009F1727 /* SavedAudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316481F1F714642009F1727 /* SavedAudioTableViewCell.swift */; };
+		731648251F714642009F1727 /* SavedAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648211F714642009F1727 /* SavedAudioView.swift */; };
+		731648261F714642009F1727 /* SavedAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648221F714642009F1727 /* SavedAudioViewController.swift */; };
+		7316482A1F71464E009F1727 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648281F71464E009F1727 /* PlayerView.swift */; };
+		7316482B1F71464E009F1727 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648291F71464E009F1727 /* PlayerViewController.swift */; };
+		7316482D1F7149AF009F1727 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316482C1F7149AF009F1727 /* RecordView.swift */; };
+		7316482F1F7150D8009F1727 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7316482E1F7150D8009F1727 /* JobsView.swift */; };
+		731648311F71517B009F1727 /* NSLayoutConstraintTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648301F71517B009F1727 /* NSLayoutConstraintTools.swift */; };
+		731648331F715740009F1727 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648321F715740009F1727 /* RequestView.swift */; };
+		731648351F715B4E009F1727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731648341F715B4E009F1727 /* LaunchScreen.storyboard */; };
+		731648371F715C7E009F1727 /* CreateTextRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731648361F715C7E009F1727 /* CreateTextRequestView.swift */; };
+		7318161C1F7675420076CA7A /* RequestOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318161B1F7675420076CA7A /* RequestOptionsView.swift */; };
+		732935791F6C82F20054EED3 /* FilteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732935771F6C82F20054EED3 /* FilteringView.swift */; };
+		7329357A1F6C82F20054EED3 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732935781F6C82F20054EED3 /* FilterViewController.swift */; };
+		7329357D1F6E35FE0054EED3 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329357C1F6E35FE0054EED3 /* MainTabController.swift */; };
+		73BA06511F77B4FE00BC0778 /* BrowseUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA06501F77B4FE00BC0778 /* BrowseUsersView.swift */; };
+		73BA06571F77D90300BC0778 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA06551F77D90300BC0778 /* UserProfileView.swift */; };
+		73BA06581F77D90300BC0778 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA06561F77D90300BC0778 /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,58 +75,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		40DA46251F24FB2700519200 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				40DA46241F24FB2700519200 /* AudioKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		4029B88E1F3092BA00638B52 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = CoreData/Storage.swift; sourceTree = "<group>"; };
 		4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakenJobsViewController.swift; path = TakenJobs/TakenJobsViewController.swift; sourceTree = "<group>"; };
 		4029B8951F3231E300638B52 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Job.swift; path = Objects/Job.swift; sourceTree = "<group>"; };
 		4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakenJobTableViewCell.swift; path = TakenJobs/Cells/TakenJobTableViewCell.swift; sourceTree = "<group>"; };
-		4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TakenJobTableViewCell.xib; path = TakenJobs/Cells/TakenJobTableViewCell.xib; sourceTree = "<group>"; };
-		4029B89C1F34F5DA00638B52 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		4029B8A11F38814200638B52 /* Request.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
 		4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTextRequestViewController.swift; path = Request/CreateTextRequestViewController.swift; sourceTree = "<group>"; };
 		4029B8A61F38819D00638B52 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestViewController.swift; path = Request/RequestViewController.swift; sourceTree = "<group>"; };
 		4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestOptionsViewController.swift; path = Request/RequestOptionsViewController.swift; sourceTree = "<group>"; };
 		4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickUserTableViewCell.swift; path = Request/Cells/PickUserTableViewCell.swift; sourceTree = "<group>"; };
-		4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PickUserTableViewCell.xib; path = Request/Cells/PickUserTableViewCell.xib; sourceTree = "<group>"; };
 		4029B8BA1F38BA3A00638B52 /* TableViewCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCompatible.swift; path = Protocols/TableViewCompatible.swift; sourceTree = "<group>"; };
 		4029B8BC1F38BF3000638B52 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Objects/User.swift; sourceTree = "<group>"; };
 		4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTableViewCell.swift; path = Request/Cells/DateTableViewCell.swift; sourceTree = "<group>"; };
-		4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateTableViewCell.xib; path = Request/Cells/DateTableViewCell.xib; sourceTree = "<group>"; };
 		4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = Request/Cells/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
-		4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DatePickerTableViewCell.xib; path = Request/Cells/DatePickerTableViewCell.xib; sourceTree = "<group>"; };
-		4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BrowseUsers.storyboard; sourceTree = "<group>"; };
 		4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowseUsersViewController.swift; path = Users/BrowseUsers/BrowseUsersViewController.swift; sourceTree = "<group>"; };
 		4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTools.swift; path = Extensions/ViewControllerTools.swift; sourceTree = "<group>"; };
 		4029B8D01F39C79B00638B52 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTools.swift; path = Extensions/DateTools.swift; sourceTree = "<group>"; };
 		4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Users/BrowseUsers/Cells/UserTableViewCell.swift; sourceTree = "<group>"; };
-		4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTableViewCell.xib; path = Users/BrowseUsers/Cells/UserTableViewCell.xib; sourceTree = "<group>"; };
-		4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileViewController.swift; path = Users/UserDetails/UserProfileViewController.swift; sourceTree = "<group>"; };
 		4029B8DA1F3AF3F700638B52 /* DateTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTools.swift; sourceTree = "<group>"; };
 		4029B8E31F3CB94500638B52 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = Notifications/NotificationViewController.swift; sourceTree = "<group>"; };
 		4029B8E51F3CB9A500638B52 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationView.swift; path = Notifications/NotificationView.swift; sourceTree = "<group>"; };
 		4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTools.swift; path = Extensions/ViewTools.swift; sourceTree = "<group>"; };
 		4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationController.swift; path = Notifications/NotificationController.swift; sourceTree = "<group>"; };
-		40B87E6F1F3DB0EF00D0779D /* RecordedAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedAudioViewController.swift; path = Listen/AudioLibrary/RecordedAudio/RecordedAudioViewController.swift; sourceTree = "<group>"; };
-		40B87E731F3DB16500D0779D /* SavedAudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedAudioTableViewCell.swift; sourceTree = "<group>"; };
-		40B87E741F3DB16500D0779D /* SavedAudioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedAudioTableViewCell.xib; sourceTree = "<group>"; };
-		40B87E751F3DB16500D0779D /* SavedAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedAudioViewController.swift; sourceTree = "<group>"; };
-		40B87E791F3DB1A500D0779D /* BrowseAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrowseAudioViewController.swift; path = Listen/AudioLibrary/BrowseAudioViewController.swift; sourceTree = "<group>"; };
-		40B87E7E1F404B7B00D0779D /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterViewController.swift; path = Filtering/FilterViewController.swift; sourceTree = "<group>"; };
-		40B87E801F404C2A00D0779D /* FilteringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilteringView.swift; path = Filtering/FilteringView.swift; sourceTree = "<group>"; };
 		40B87E821F40727600D0779D /* DictionaryTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryTools.swift; path = Extensions/DictionaryTools.swift; sourceTree = "<group>"; };
 		40DA45DD1F24F9C000519200 /* Whispr-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whispr-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA45E01F24F9C000519200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,19 +108,30 @@
 		40DA45FC1F24F9C100519200 /* Whispr-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whispr-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DA46001F24F9C100519200 /* Whispr_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whispr_iOSUITests.swift; sourceTree = "<group>"; };
 		40DA46021F24F9C100519200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40DA46131F24FAA400519200 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		40DA46171F24FAA400519200 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
-		40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		40DA461D1F24FAB200519200 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		40DA461E1F24FAB200519200 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40DA46221F24FB2700519200 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/iOS/AudioKit.framework; sourceTree = "<group>"; };
 		40DA46291F24FCF600519200 /* AVFoundationRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVFoundationRecorder.swift; sourceTree = "<group>"; };
 		40DA462A1F24FCF600519200 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		40DA462D1F24FD7300519200 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		40DA462F1F2C777900519200 /* Listen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Listen.storyboard; sourceTree = "<group>"; };
-		40DA46441F2FA7FA00519200 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		40DA464F1F2FAA4500519200 /* StringTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTools.swift; path = Extensions/StringTools.swift; sourceTree = "<group>"; };
-		40DA46521F308D9E00519200 /* Record.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Record.storyboard; path = Record/Record.storyboard; sourceTree = "<group>"; };
+		7316481F1F714642009F1727 /* SavedAudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedAudioTableViewCell.swift; sourceTree = "<group>"; };
+		731648211F714642009F1727 /* SavedAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedAudioView.swift; path = Listen/SavedAudioView.swift; sourceTree = "<group>"; };
+		731648221F714642009F1727 /* SavedAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SavedAudioViewController.swift; path = Listen/SavedAudioViewController.swift; sourceTree = "<group>"; };
+		731648281F71464E009F1727 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		731648291F71464E009F1727 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		7316482C1F7149AF009F1727 /* RecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		7316482E1F7150D8009F1727 /* JobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsView.swift; path = TakenJobs/JobsView.swift; sourceTree = "<group>"; };
+		731648301F71517B009F1727 /* NSLayoutConstraintTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraintTools.swift; path = Extensions/NSLayoutConstraintTools.swift; sourceTree = "<group>"; };
+		731648321F715740009F1727 /* RequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestView.swift; path = Request/RequestView.swift; sourceTree = "<group>"; };
+		731648341F715B4E009F1727 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		731648361F715C7E009F1727 /* CreateTextRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTextRequestView.swift; path = Request/CreateTextRequestView.swift; sourceTree = "<group>"; };
+		7318161B1F7675420076CA7A /* RequestOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestOptionsView.swift; path = Request/RequestOptionsView.swift; sourceTree = "<group>"; };
+		732935771F6C82F20054EED3 /* FilteringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilteringView.swift; path = Controls/Filtering/FilteringView.swift; sourceTree = "<group>"; };
+		732935781F6C82F20054EED3 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterViewController.swift; path = Controls/Filtering/FilterViewController.swift; sourceTree = "<group>"; };
+		7329357C1F6E35FE0054EED3 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabController.swift; path = MainTabs/MainTabController.swift; sourceTree = "<group>"; };
+		73BA06501F77B4FE00BC0778 /* BrowseUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrowseUsersView.swift; path = Users/BrowseUsers/BrowseUsersView.swift; sourceTree = "<group>"; };
+		73BA06551F77D90300BC0778 /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		73BA06561F77D90300BC0778 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DA462E1F24FD7300519200 /* AVFoundation.framework in Frameworks */,
-				40DA46231F24FB2700519200 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +173,7 @@
 			children = (
 				4029B8971F3233E500638B52 /* Cells */,
 				4029B8921F322EDD00638B52 /* TakenJobsViewController.swift */,
+				7316482E1F7150D8009F1727 /* JobsView.swift */,
 			);
 			name = TakenJobs;
 			sourceTree = "<group>";
@@ -224,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				4029B8981F32340500638B52 /* TakenJobTableViewCell.swift */,
-				4029B8991F32340500638B52 /* TakenJobTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -234,8 +207,11 @@
 			children = (
 				4029B8AA1F388A8200638B52 /* Cells */,
 				4029B8A31F38817200638B52 /* CreateTextRequestViewController.swift */,
-				4029B8A61F38819D00638B52 /* RequestViewController.swift */,
+				731648361F715C7E009F1727 /* CreateTextRequestView.swift */,
 				4029B8A81F3888F600638B52 /* RequestOptionsViewController.swift */,
+				7318161B1F7675420076CA7A /* RequestOptionsView.swift */,
+				4029B8A61F38819D00638B52 /* RequestViewController.swift */,
+				731648321F715740009F1727 /* RequestView.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -244,11 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				4029B8AE1F388ADC00638B52 /* PickUserTableViewCell.swift */,
-				4029B8AF1F388ADC00638B52 /* PickUserTableViewCell.xib */,
 				4029B8BF1F38CFE700638B52 /* DateTableViewCell.swift */,
-				4029B8C01F38CFE700638B52 /* DateTableViewCell.xib */,
 				4029B8C31F38D01400638B52 /* DatePickerTableViewCell.swift */,
-				4029B8C41F38D01400638B52 /* DatePickerTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -264,7 +237,7 @@
 		4029B8CA1F39C68600638B52 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				4029B8D71F39CCA800638B52 /* UserDetails */,
+				73BA06541F77D90300BC0778 /* UserProfile */,
 				4029B8CB1F39C69A00638B52 /* BrowseUsers */,
 			);
 			name = Users;
@@ -275,6 +248,7 @@
 			children = (
 				4029B8D21F39CBA300638B52 /* Cells */,
 				4029B8CC1F39C6BE00638B52 /* BrowseUsersViewController.swift */,
+				73BA06501F77B4FE00BC0778 /* BrowseUsersView.swift */,
 			);
 			name = BrowseUsers;
 			sourceTree = "<group>";
@@ -283,17 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				4029B8D31F39CBCB00638B52 /* UserTableViewCell.swift */,
-				4029B8D41F39CBCB00638B52 /* UserTableViewCell.xib */,
 			);
 			name = Cells;
-			sourceTree = "<group>";
-		};
-		4029B8D71F39CCA800638B52 /* UserDetails */ = {
-			isa = PBXGroup;
-			children = (
-				4029B8D81F39CCDF00638B52 /* UserProfileViewController.swift */,
-			);
-			name = UserDetails;
 			sourceTree = "<group>";
 		};
 		4029B8DC1F3CB67500638B52 /* Network */ = {
@@ -311,53 +276,6 @@
 				4051E3F71F3CC1B700DC1EBB /* NotificationController.swift */,
 			);
 			name = Notifications;
-			sourceTree = "<group>";
-		};
-		40B87E6D1F3DB09300D0779D /* AudioLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				40B87E711F3DB16500D0779D /* SavedAudio */,
-				40B87E6E1F3DB0A300D0779D /* RecordedAudio */,
-				40B87E791F3DB1A500D0779D /* BrowseAudioViewController.swift */,
-			);
-			name = AudioLibrary;
-			sourceTree = "<group>";
-		};
-		40B87E6E1F3DB0A300D0779D /* RecordedAudio */ = {
-			isa = PBXGroup;
-			children = (
-				40B87E6F1F3DB0EF00D0779D /* RecordedAudioViewController.swift */,
-			);
-			name = RecordedAudio;
-			sourceTree = "<group>";
-		};
-		40B87E711F3DB16500D0779D /* SavedAudio */ = {
-			isa = PBXGroup;
-			children = (
-				40B87E7B1F3DC15D00D0779D /* Filtering */,
-				40B87E721F3DB16500D0779D /* Cells */,
-				40B87E751F3DB16500D0779D /* SavedAudioViewController.swift */,
-			);
-			name = SavedAudio;
-			path = Listen/AudioLibrary/SavedAudio;
-			sourceTree = "<group>";
-		};
-		40B87E721F3DB16500D0779D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				40B87E731F3DB16500D0779D /* SavedAudioTableViewCell.swift */,
-				40B87E741F3DB16500D0779D /* SavedAudioTableViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		40B87E7B1F3DC15D00D0779D /* Filtering */ = {
-			isa = PBXGroup;
-			children = (
-				40B87E7E1F404B7B00D0779D /* FilterViewController.swift */,
-				40B87E801F404C2A00D0779D /* FilteringView.swift */,
-			);
-			name = Filtering;
 			sourceTree = "<group>";
 		};
 		40DA45D41F24F9C000519200 = {
@@ -384,6 +302,7 @@
 		40DA45DF1F24F9C000519200 /* Whispr-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				732935751F6C829F0054EED3 /* Controls */,
 				4029B8B91F38BA1700638B52 /* Protocols */,
 				4029B8941F322FCA00638B52 /* Objects */,
 				40DA464E1F2FA9E800519200 /* Extensions */,
@@ -419,11 +338,12 @@
 		40DA46101F24FAA400519200 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				731648271F71464E009F1727 /* Player */,
+				7329357B1F6D76F20054EED3 /* MainTabs */,
 				4029B8CA1F39C68600638B52 /* Users */,
 				4029B89E1F38802D00638B52 /* Request */,
 				40DA463A1F2FA61B00519200 /* Listen */,
 				40DA46111F24FAA400519200 /* Editor */,
-				40DA46121F24FAA400519200 /* Login */,
 				40DA46161F24FAA400519200 /* Record */,
 			);
 			path = ViewControllers;
@@ -436,20 +356,13 @@
 			path = Editor;
 			sourceTree = "<group>";
 		};
-		40DA46121F24FAA400519200 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				40DA46131F24FAA400519200 /* LoginViewController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		40DA46161F24FAA400519200 /* Record */ = {
 			isa = PBXGroup;
 			children = (
 				4029B8911F322EA000638B52 /* Record */,
 				4029B8901F322E8300638B52 /* TakenJobs */,
 				40DA46171F24FAA400519200 /* RecordViewController.swift */,
+				7316482C1F7149AF009F1727 /* RecordView.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -457,14 +370,7 @@
 		40DA461B1F24FAB200519200 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				40DA46511F308D6800519200 /* Record */,
-				40DA461C1F24FAB200519200 /* LaunchScreen.storyboard */,
-				40DA461D1F24FAB200519200 /* Login.storyboard */,
-				40DA461E1F24FAB200519200 /* Main.storyboard */,
-				40DA462F1F2C777900519200 /* Listen.storyboard */,
-				4029B89C1F34F5DA00638B52 /* Settings.storyboard */,
-				4029B8A11F38814200638B52 /* Request.storyboard */,
-				4029B8C81F39C62400638B52 /* BrowseUsers.storyboard */,
+				731648341F715B4E009F1727 /* LaunchScreen.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -501,19 +407,11 @@
 		40DA463A1F2FA61B00519200 /* Listen */ = {
 			isa = PBXGroup;
 			children = (
-				40B87E6D1F3DB09300D0779D /* AudioLibrary */,
-				40DA46431F2FA7FA00519200 /* Player */,
+				7316481E1F714642009F1727 /* Cells */,
+				731648211F714642009F1727 /* SavedAudioView.swift */,
+				731648221F714642009F1727 /* SavedAudioViewController.swift */,
 			);
 			name = Listen;
-			sourceTree = "<group>";
-		};
-		40DA46431F2FA7FA00519200 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				40DA46441F2FA7FA00519200 /* PlayerViewController.swift */,
-			);
-			name = Player;
-			path = Listen/Player;
 			sourceTree = "<group>";
 		};
 		40DA464E1F2FA9E800519200 /* Extensions */ = {
@@ -524,16 +422,62 @@
 				4029B8CE1F39C78000638B52 /* ViewControllerTools.swift */,
 				4051E3F51F3CBC1900DC1EBB /* ViewTools.swift */,
 				40B87E821F40727600D0779D /* DictionaryTools.swift */,
+				731648301F71517B009F1727 /* NSLayoutConstraintTools.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		40DA46511F308D6800519200 /* Record */ = {
+		7316481E1F714642009F1727 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				40DA46521F308D9E00519200 /* Record.storyboard */,
+				7316481F1F714642009F1727 /* SavedAudioTableViewCell.swift */,
 			);
-			name = Record;
+			name = Cells;
+			path = Listen/Cells;
+			sourceTree = "<group>";
+		};
+		731648271F71464E009F1727 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				731648281F71464E009F1727 /* PlayerView.swift */,
+				731648291F71464E009F1727 /* PlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		732935751F6C829F0054EED3 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				732935761F6C82B50054EED3 /* Filtering */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		732935761F6C82B50054EED3 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				732935771F6C82F20054EED3 /* FilteringView.swift */,
+				732935781F6C82F20054EED3 /* FilterViewController.swift */,
+			);
+			name = Filtering;
+			sourceTree = "<group>";
+		};
+		7329357B1F6D76F20054EED3 /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				7329357C1F6E35FE0054EED3 /* MainTabController.swift */,
+			);
+			name = MainTabs;
+			sourceTree = "<group>";
+		};
+		73BA06541F77D90300BC0778 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				73BA06551F77D90300BC0778 /* UserProfileView.swift */,
+				73BA06561F77D90300BC0778 /* UserProfileViewController.swift */,
+			);
+			name = UserProfile;
+			path = Users/UserProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +490,6 @@
 				40DA45D91F24F9C000519200 /* Sources */,
 				40DA45DA1F24F9C000519200 /* Frameworks */,
 				40DA45DB1F24F9C000519200 /* Resources */,
-				40DA46251F24FB2700519200 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -647,21 +590,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DA461F1F24FAB200519200 /* LaunchScreen.storyboard in Resources */,
 				40DA45E81F24F9C100519200 /* Assets.xcassets in Resources */,
-				4029B8B11F388ADC00638B52 /* PickUserTableViewCell.xib in Resources */,
-				4029B8A21F38814200638B52 /* Request.storyboard in Resources */,
-				4029B8D61F39CBCC00638B52 /* UserTableViewCell.xib in Resources */,
-				4029B89D1F34F5DA00638B52 /* Settings.storyboard in Resources */,
-				40DA46211F24FAB200519200 /* Main.storyboard in Resources */,
-				40DA46301F2C777900519200 /* Listen.storyboard in Resources */,
-				4029B8C91F39C62400638B52 /* BrowseUsers.storyboard in Resources */,
-				4029B8C21F38CFE700638B52 /* DateTableViewCell.xib in Resources */,
-				40DA46531F308D9E00519200 /* Record.storyboard in Resources */,
-				40DA46201F24FAB200519200 /* Login.storyboard in Resources */,
-				4029B89B1F32340500638B52 /* TakenJobTableViewCell.xib in Resources */,
-				40B87E771F3DB16500D0779D /* SavedAudioTableViewCell.xib in Resources */,
-				4029B8C61F38D01400638B52 /* DatePickerTableViewCell.xib in Resources */,
+				731648351F715B4E009F1727 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,40 +616,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731648331F715740009F1727 /* RequestView.swift in Sources */,
+				731648231F714642009F1727 /* SavedAudioTableViewCell.swift in Sources */,
 				4051E3F81F3CC1B700DC1EBB /* NotificationController.swift in Sources */,
 				4029B8B01F388ADC00638B52 /* PickUserTableViewCell.swift in Sources */,
-				40DA46181F24FAA400519200 /* LoginViewController.swift in Sources */,
 				4029B8C51F38D01400638B52 /* DatePickerTableViewCell.swift in Sources */,
+				7316482B1F71464E009F1727 /* PlayerViewController.swift in Sources */,
 				4029B8A71F38819D00638B52 /* RequestViewController.swift in Sources */,
 				40DA45E11F24F9C000519200 /* AppDelegate.swift in Sources */,
+				73BA06581F77D90300BC0778 /* UserProfileViewController.swift in Sources */,
 				40DA462B1F24FCF600519200 /* AVFoundationRecorder.swift in Sources */,
 				4029B8A91F3888F600638B52 /* RequestOptionsViewController.swift in Sources */,
+				7316482D1F7149AF009F1727 /* RecordView.swift in Sources */,
 				40DA46501F2FAA4500519200 /* StringTools.swift in Sources */,
-				40DA46451F2FA7FA00519200 /* PlayerViewController.swift in Sources */,
 				4029B8C11F38CFE700638B52 /* DateTableViewCell.swift in Sources */,
-				40B87E701F3DB0EF00D0779D /* RecordedAudioViewController.swift in Sources */,
-				40B87E761F3DB16500D0779D /* SavedAudioTableViewCell.swift in Sources */,
 				4029B8961F3231E300638B52 /* Job.swift in Sources */,
+				7318161C1F7675420076CA7A /* RequestOptionsView.swift in Sources */,
+				7329357D1F6E35FE0054EED3 /* MainTabController.swift in Sources */,
+				7329357A1F6C82F20054EED3 /* FilterViewController.swift in Sources */,
 				40DA462C1F24FCF600519200 /* Recorder.swift in Sources */,
 				4029B8D51F39CBCC00638B52 /* UserTableViewCell.swift in Sources */,
 				4029B89A1F32340500638B52 /* TakenJobTableViewCell.swift in Sources */,
+				73BA06571F77D90300BC0778 /* UserProfileView.swift in Sources */,
 				4029B8931F322EDD00638B52 /* TakenJobsViewController.swift in Sources */,
 				40DA461A1F24FAA400519200 /* RecordViewController.swift in Sources */,
 				4029B8D11F39C79B00638B52 /* DateTools.swift in Sources */,
 				4029B88F1F3092BA00638B52 /* Storage.swift in Sources */,
 				4029B8A41F38817200638B52 /* CreateTextRequestViewController.swift in Sources */,
-				4029B8D91F39CCDF00638B52 /* UserProfileViewController.swift in Sources */,
-				40B87E811F404C2A00D0779D /* FilteringView.swift in Sources */,
+				7316482A1F71464E009F1727 /* PlayerView.swift in Sources */,
+				731648261F714642009F1727 /* SavedAudioViewController.swift in Sources */,
+				732935791F6C82F20054EED3 /* FilteringView.swift in Sources */,
+				731648251F714642009F1727 /* SavedAudioView.swift in Sources */,
+				731648311F71517B009F1727 /* NSLayoutConstraintTools.swift in Sources */,
 				4029B8CF1F39C78000638B52 /* ViewControllerTools.swift in Sources */,
 				4051E3F61F3CBC1900DC1EBB /* ViewTools.swift in Sources */,
 				4029B8E61F3CB9A500638B52 /* NotificationView.swift in Sources */,
+				73BA06511F77B4FE00BC0778 /* BrowseUsersView.swift in Sources */,
 				4029B8E41F3CB94500638B52 /* NotificationViewController.swift in Sources */,
-				40B87E7F1F404B7B00D0779D /* FilterViewController.swift in Sources */,
-				40B87E781F3DB16500D0779D /* SavedAudioViewController.swift in Sources */,
 				4029B8CD1F39C6BE00638B52 /* BrowseUsersViewController.swift in Sources */,
-				40B87E7A1F3DB1A500D0779D /* BrowseAudioViewController.swift in Sources */,
+				731648371F715C7E009F1727 /* CreateTextRequestView.swift in Sources */,
 				40B87E831F40727600D0779D /* DictionaryTools.swift in Sources */,
 				4029B8BB1F38BA3A00638B52 /* TableViewCompatible.swift in Sources */,
+				7316482F1F7150D8009F1727 /* JobsView.swift in Sources */,
 				4029B8BD1F38BF3000638B52 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +799,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Whispr-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,6 +819,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Whispr-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Read-r.Whispr-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

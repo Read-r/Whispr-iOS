@@ -11,28 +11,58 @@ import UIKit
 class CreateTextRequestViewController: UIViewController {
     
     private var newJob = Job()
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var nextButton: UIBarButtonItem!
+    
+    var textView: UITextView  {
+        let requestView = view as! CreateTextRequestView
+        
+        return requestView.textView
+    }
+    
+    var nextButton: UIBarButtonItem {
+        let requestView = view as! CreateTextRequestView
+        
+        return requestView.nextBarButton
+    }
+    
+    var cancelButton: UIBarButtonItem {
+        let requestView = view as! CreateTextRequestView
+        
+        return requestView.cancelBarButton
+    }
+    
+    override func loadView() {
+        view = CreateTextRequestView(frame: UIScreen.main.bounds)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textView.delegate = self
+        
+        cancelButton.target = self
+        cancelButton.action = #selector(cancelAction(_:))
+        
+        nextButton.target = self
+        nextButton.action = #selector(nextAction(_:))
+        
+        navigationItem.leftBarButtonItem = cancelButton
+        navigationItem.rightBarButtonItem = nextButton
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "RequestOptions",
-            let destVC = segue.destination as? RequestOptionsViewController {
-            destVC.newJob = newJob
-        }
-    }
-    
-    @IBAction func cancelAction(_ sender: Any) {
+    @objc func cancelAction(_ sender: Any) {
         guard let baseVC = presentingViewController else {
             return
         }
         
         baseVC.dismiss(animated: true)
+    }
+    
+    @objc func nextAction(_ sender: Any) {
+        let options = RequestOptionsViewController(withJob:newJob)
+        
+        if let navController = navigationController {
+            navController.pushViewController(options, animated: true)
+        }
     }
 }
 

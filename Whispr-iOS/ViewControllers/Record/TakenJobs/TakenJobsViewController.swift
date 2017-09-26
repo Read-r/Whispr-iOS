@@ -10,13 +10,31 @@ import UIKit
 
 class TakenJobsViewController: UIViewController {
 
-    fileprivate var datasource = [Job(), Job()]
-    @IBOutlet weak var tableview: UITableView!
+    fileprivate var datasource = [Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job(), Job()]
+    var tableview: UITableView {
+        let jobsView = view as! JobsView
+        
+        return jobsView.tableView
+    }
+    
+    override func loadView() {
+        view = JobsView(frame: UIScreen.main.bounds)
+        
+        tableview.contentInset.top += UIApplication.shared.statusBarFrame.height
+        
+        if let tabbar = tabBarController?.tabBar {
+            tableview.contentInset.bottom += tabbar.frame.size.height
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableview.register("TakenJobTableViewCell".nib, forCellReuseIdentifier: "JobCell")
+        tableview.contentInsetAdjustmentBehavior = .never
+        tableview.contentInset = contentInsets()
+        tableview.contentOffset = CGPoint(x: 0.0, y: -tableview.contentInset.top)
+        
+        tableview.register(SavedAudioTableViewCell.self, forCellReuseIdentifier: "JobCell")
         
         tableview.dataSource = self
         tableview.delegate = self
@@ -30,6 +48,8 @@ class TakenJobsViewController: UIViewController {
             destVC.job = obj
         }
     }
+    
+    
 }
 
 extension TakenJobsViewController : UITableViewDataSource {
@@ -42,7 +62,7 @@ extension TakenJobsViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell") as? TakenJobTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "JobCell") as? SavedAudioTableViewCell else {
             return UITableViewCell()
         }
         
@@ -58,6 +78,8 @@ extension TakenJobsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        performSegue(withIdentifier: "Record", sender: datasource[indexPath.row])
+        let newVC = RecordViewController()
+        newVC.job = datasource[indexPath.row]
+        present(newVC, animated: true, completion: nil)
     }
 }

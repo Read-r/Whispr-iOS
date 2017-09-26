@@ -16,7 +16,13 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
     var player : AVAudioPlayer? = nil
     lazy var updateTimer: Timer? = nil
     
-    @IBOutlet weak var progressBar: UISlider!
+    var progressBar: UISlider {
+        guard let thisView = view as? PlayerView else {
+            return UISlider()
+        }
+        
+        return thisView.progressBar
+    }
     
     private func timerFunc() -> Timer {
         return Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
@@ -24,9 +30,8 @@ class PlayerViewController: UIViewController, AVAudioPlayerDelegate {
         })
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func loadView() {
+        view = PlayerView(frame: UIScreen.main.bounds)
     }
     
     @IBAction func play(_ sender: Any) {

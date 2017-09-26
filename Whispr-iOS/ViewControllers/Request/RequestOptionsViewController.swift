@@ -10,9 +10,20 @@ import UIKit
 
 class RequestOptionsViewController: UIViewController {
     
-    @IBOutlet weak var tableview: UITableView!
+    var tableView: UITableView {
+        let optionsView = view as! RequestOptionsView
+        
+        return optionsView.tableView
+    }
     
-    var newJob : Job? = nil
+    var newJob : Job? = nil {
+        didSet {
+            guard let job = newJob else {
+                return
+            }
+            pickedDate = job.dueDate
+        }
+    }
     
     fileprivate var pickedUser : User? = nil
     fileprivate var pickedDate = Date()
@@ -21,16 +32,30 @@ class RequestOptionsViewController: UIViewController {
     fileprivate var datePicker : UIDatePicker? = nil
     fileprivate var dateLabel : UILabel? = nil
     
+    init(withJob job: Job?) {
+        super.init(nibName: nil, bundle: nil)
+        
+        newJob = job
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        view = RequestOptionsView(frame: UIScreen.main.bounds)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableview.register("PickUserTableViewCell".nib, forCellReuseIdentifier: "PickUser")
-        tableview.register("DateTableViewCell".nib, forCellReuseIdentifier: "Date")
-        tableview.register("DatePickerTableViewCell".nib, forCellReuseIdentifier: "DatePicker")
-        tableview.dataSource = self
-        tableview.delegate = self
+        tableView.register(PickUserTableViewCell.self, forCellReuseIdentifier: "PickUser")
+        tableView.register(SavedAudioTableViewCell.self, forCellReuseIdentifier: "Date")
+        tableView.register(DatePickerTableViewCell.self, forCellReuseIdentifier: "DatePicker")
+        tableView.dataSource = self
+        tableView.delegate = self
         
-        tableview.reloadData()
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,18 +71,6 @@ class RequestOptionsViewController: UIViewController {
         NotificationController.displayNotification("Request sent!", position: .top)
         
         presentingVC.dismiss(animated: true, completion: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "BrowseUsers",
-            let baseDestVC = segue.destination as? UINavigationController {
-            
-            guard let destVC = baseDestVC.topViewController as? BrowseUsersViewController else {
-                return
-            }
-            
-            destVC.delegate = self
-        }
     }
 }
 
@@ -80,7 +93,7 @@ extension RequestOptionsViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch (indexPath.row, indexPath.section) {
         case (0, 0):
-            guard   let cell = tableview.dequeueReusableCell(withIdentifier: "PickUser", for: indexPath) as? PickUserTableViewCell,
+            guard   let cell = tableView.dequeueReusableCell(withIdentifier: "PickUser", for: indexPath) as? PickUserTableViewCell,
                     let job = newJob else {
                 return UITableViewCell()
             }
@@ -89,7 +102,7 @@ extension RequestOptionsViewController : UITableViewDataSource {
             
             return cell
         case (0, 1):
-            guard   let cell = tableview.dequeueReusableCell(withIdentifier: "Date", for: indexPath) as? DateTableViewCell,
+            guard   let cell = tableView.dequeueReusableCell(withIdentifier: "Date", for: indexPath) as? SavedAudioTableViewCell,
                     let job = newJob else {
                 return UITableViewCell()
             }
@@ -98,7 +111,7 @@ extension RequestOptionsViewController : UITableViewDataSource {
             
             return cell
         case (1, 1):
-            guard let cell = tableview.dequeueReusableCell(withIdentifier: "DatePicker", for: indexPath) as? DatePickerTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "DatePicker", for: indexPath) as? DatePickerTableViewCell else {
                 return UITableViewCell()
             }
             
@@ -119,7 +132,7 @@ extension RequestOptionsViewController : UITableViewDataSource {
             let job = newJob {
             job.dueDate = picker.date
             
-            tableview.reloadRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
+            tableView.reloadRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
         }
     }
 }
@@ -138,24 +151,28 @@ extension RequestOptionsViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableview.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
         if (indexPath.row, indexPath.section) == (0, 0) {
-            performSegue(withIdentifier: "BrowseUsers", sender: nil)
+            let userPickVC = BrowseUsersViewController(nibName: nil, bundle: nil)
+            userPickVC.delegate = self
+            let navController = UINavigationController(rootViewController: userPickVC)
+            
+            present(navController, animated: true, completion: nil)
         }
         else if (indexPath.row, indexPath.section) == (0, 1) {
-            tableview.beginUpdates()
+            tableView.beginUpdates()
             
             if datePickerExpanded {
-                tableview.deleteRows(at: [IndexPath(row: 1, section: 1)], with: .fade)
+                tableView.deleteRows(at: [IndexPath(row: 1, section: 1)], with: .fade)
             }
             else {
-                tableview.insertRows(at: [IndexPath(row: 1, section: 1)], with: .fade)
+                tableView.insertRows(at: [IndexPath(row: 1, section: 1)], with: .fade)
             }
             
             datePickerExpanded = !datePickerExpanded
             
-            tableview.endUpdates()
+            tableView.endUpdates()
         }
     }
 }
@@ -168,6 +185,6 @@ extension RequestOptionsViewController : UserBrowseAndPickDelegate {
         
         job.requestedReder = user
         
-        tableview.reloadData()
+        tableView.reloadData()
     }
 }

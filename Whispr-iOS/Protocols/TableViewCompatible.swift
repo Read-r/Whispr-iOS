@@ -8,6 +8,8 @@
 
 import UIKit
 
-class TableViewCompatible: NSObject {
-
+protocol TableViewCompatible {
+    var reuseIdentifier : String { get }
+    
+    func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell
 }

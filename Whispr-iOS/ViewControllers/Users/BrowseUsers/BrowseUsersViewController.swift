@@ -15,15 +15,29 @@ protocol UserBrowseAndPickDelegate {
 class BrowseUsersViewController: UIViewController {
 
     fileprivate var datasource = [User]()
-    @IBOutlet weak var tableview: UITableView!
+    var tableview: UITableView {
+        let browseView = view as! BrowseUsersView
+        
+        return browseView.tableView
+    }
+    
     var delegate : UserBrowseAndPickDelegate? = nil
+    
+    override func loadView() {
+        view = BrowseUsersView(frame: UIScreen.main.bounds)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableview.register("UserTableViewCell".nib, forCellReuseIdentifier: "UserCell")
+        tableview.contentInset = contentInsets()
+        tableview.register(UserTableViewCell.self, forCellReuseIdentifier: "UserCell")
         tableview.dataSource = self
         tableview.delegate = self
+        
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelAction(_:)))
+        
+        navigationItem.leftBarButtonItem = cancelButton
         
         let user1 = User()
         user1.name = "John Doe"
@@ -37,7 +51,7 @@ class BrowseUsersViewController: UIViewController {
         tableview.reloadData()
     }
     
-    @IBAction func cancelAction(_ sender: Any) {
+    @objc func cancelAction(_ sender: Any) {
         guard let presentingVC = presentingViewController else {
             return
         }
@@ -45,23 +59,7 @@ class BrowseUsersViewController: UIViewController {
         presentingVC.dismiss(animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "UserProfile" {
-            guard   let destVC = segue.destination as? UserProfileViewController,
-                    let user = sender as? User else {
-                return
-            }
-            
-            destVC.user = user
-            
-            if let del = delegate {
-                destVC.delegate = del
-            }
-        }
-    }
-    
     func pickButtonAction(_ sender:UIButton) {
-        
         guard   let del = delegate,
                 let presentingVC = presentingViewController else {
             return
@@ -76,19 +74,21 @@ class BrowseUsersViewController: UIViewController {
     }
     
     func profileButtonAction(_ sender:UIButton) {
-        guard   let del = delegate,
-            let presentingVC = presentingViewController else {
-                return
+        guard let navController = navigationController else {
+            return
         }
+        
         let touchPoint = sender.convert(CGPoint.zero, to: tableview)
         if let indexPath = tableview.indexPathForRow(at: touchPoint) {
-            performSegue(withIdentifier: "UserProfile", sender: datasource[indexPath.row])
+            let userProfile = UserProfileViewController(displayUser: datasource[indexPath.row])
+            userProfile.delegate = delegate
+            
+            navController.pushViewController(userProfile, animated: true)
         }
     }
 }
 
 extension BrowseUsersViewController : UITableViewDataSource {
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

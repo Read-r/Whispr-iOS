@@ -8,12 +8,24 @@
 
 import UIKit
 
-
-/*
-    Will need to change this to extend a protocol when the need arises. Every
-    viewcontroller that needs this funcs will then have to implement that protocol
- */
-
 extension UIViewController {
     //func dismissIfPresenting
+    
+    func contentInsets() -> UIEdgeInsets {
+        var insets = UIEdgeInsetsMake(0, 0, 0, 0)
+        
+        if !UIApplication.shared.isStatusBarHidden {
+            insets.top += UIApplication.shared.statusBarFrame.height
+        }
+        
+        if let navBarBounds = navigationController?.navigationBar.bounds {
+            insets.top += navBarBounds.height
+        }
+        
+        if let tabbarBounds = tabBarController?.tabBar.bounds {
+            insets.bottom += tabbarBounds.height
+        }
+        
+        return insets
+    }
 }

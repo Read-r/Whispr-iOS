@@ -17,11 +17,31 @@ class RecordViewController: UIViewController {
     private var currentDuration = 0
     private var durationUpdateTimer: Timer? = nil
     
-    @IBOutlet weak var recordButton: UIButton!
-    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var durationLabel: UILabel!
+    var recordButton: UIButton? {
+        guard let recordView = view as? RecordView else {
+            return nil
+        }
+
+        return recordView.dismissButton
+    }
     
-    @IBAction func buttonAction(_ sender: Any) {
+    var textView: UITextView? {
+        guard let recordView = view as? RecordView else {
+            return nil
+        }
+        
+        return recordView.textView
+    }
+    
+    var durationLabel: UILabel? {
+        guard let recordView = view as? RecordView else {
+            return nil
+        }
+        
+        return recordView.durationLabel
+    }
+    
+    func buttonAction(_ sender: Any) {
         if self.recorder.isRecording() {
             stopRecording()
         }
@@ -31,15 +51,15 @@ class RecordViewController: UIViewController {
                 self.recorder.fileName = name
                 
                 self.recorder.record()
-                self.recordButton.titleLabel?.text = "Stop recording"
-                self.recordButton.sizeToFit()
+                self.recordButton?.titleLabel?.text = "Stop recording"
+                self.recordButton?.sizeToFit()
                 
                 self.durationUpdateTimer = self.timerFunc()
             })
         }
     }
     
-    @IBAction func dismiss(_ sender: Any) {
+    @objc func dismiss(_ sender: Any) {
         cancelRecording()
         
         presentingViewController?.dismiss(animated: true, completion: nil)
@@ -48,7 +68,7 @@ class RecordViewController: UIViewController {
     private func timerFunc() -> Timer {
         return Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
             self.currentDuration += 1
-            self.durationLabel.text = String(self.currentDuration)
+            self.durationLabel?.text = String(self.currentDuration)
         })
     }
     
@@ -70,8 +90,8 @@ class RecordViewController: UIViewController {
     
     private func stopRecording() {
         recorder.stopRecording()
-        recordButton.titleLabel?.text = "Record"
-        recordButton.sizeToFit()
+        recordButton?.titleLabel?.text = "Record"
+        recordButton?.sizeToFit()
         
         if let timer = durationUpdateTimer {
             timer.invalidate()
@@ -101,11 +121,21 @@ class RecordViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    override func loadView() {
+        super.loadView()
+        
+        view = RecordView(frame: UIScreen.main.bounds)
+        if let recordView = view as? RecordView {
+            recordView.dismissButton.addTarget(self, action: #selector(dismiss(_:)), for: .touchUpInside)
+        }
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        textView.text = job?.text ?? ""
+        textView?.text = job?.text ?? ""
         self.currentDuration = 0
-        self.durationLabel.text = String(self.currentDuration)
+        self.durationLabel?.text = String(self.currentDuration)
     }
 }
